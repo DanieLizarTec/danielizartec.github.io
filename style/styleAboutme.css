@@ -212,7 +212,7 @@ div#container_window_info{
             display: block;
             width: 65vw; 
             height: 95vw; 
-            font-size:2.5vw;
+            font-size:2.15vw;
             background-image: url("../resources/window_info_mobile.png");
             background-size: contain;
             background-position: center;
@@ -228,12 +228,16 @@ div#container_window_info{
 
         #container_bar_aboutme{
             margin-top:-0.3%;
-            font-size:2.5vw;
+            font-size:2.15vw;
            
         }
 
         #rectangle_contact{
-            font-size:2.5vw;
+            font-size:2.15vw;
+        }
+
+        #title_name{
+            font-size:2.15vw;
         }
 
         #info_content_container {
@@ -251,7 +255,7 @@ div#container_window_info{
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            font-size:2.5vw;
+            font-size:2.15vw;
             overflow: hidden; 
             
              
@@ -259,7 +263,7 @@ div#container_window_info{
 
         #text_info_content{
             color:black;
-            font-size:2.5vw;
+            font-size:2.15vw;
             margin-top:2%;
             margin-bottom:20%;
             text-align: justify;
