@@ -220,7 +220,7 @@ div#container_window_info{
             position: absolute;
             
             left: 50%;
-            transform: translateY(-32%) translateX(-50%) scale(1.5); 
+            transform: translateY(-50%) translateX(-50%) scale(1.5); 
             overflow: hidden;
             z-index:1;
         
@@ -235,13 +235,13 @@ div#container_window_info{
     
             display:flex;
             width: 61.8vw;
-            height: 90.5vw;
+            height: 90vw;
             margin-left: 2.25%;
             margin-right: 2%;
             overflow-y: none; 
             background: url("");
             background-color:#dbf6fe;
-            margin-top:-0.24%;
+            margin-top:0.7%;
             z-index:2;
             background-size: cover;
             background-position: center;
@@ -254,7 +254,7 @@ div#container_window_info{
 
         #text_info_content{
             color:black;
-            font-size:1.2vw;
+            font-size:2vw;
             margin-top:2%;
             margin-bottom:20%;
             text-align: justify;
@@ -266,7 +266,7 @@ div#container_window_info{
 
         #foto_aboutme {
         
-            margin-left: -30%;
+            margin-left: -27.5%;
             
         }
 
