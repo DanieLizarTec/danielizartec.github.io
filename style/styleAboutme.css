@@ -135,7 +135,7 @@ div#container_window_info{
     padding:2%;
     width:100%;
     height: 15%; 
-    font-size:2vw; 
+    font-size:1.75vw; 
     color: rgb(1, 143, 143); 
     background-color: rgb(158, 240, 213);
     font-family: 'Times New Roman'; 
@@ -201,6 +201,10 @@ div#container_window_info{
     margin-left:-23%;
     padding:1%;
     border-radius:2%;
+}
+
+a{
+    font-size:1.2vw;
 }
 
 /* For Vertical Mobile/Tablet */
@@ -278,6 +282,19 @@ div#container_window_info{
         
             margin-left: -37.5%;
             
+        }
+
+        #list_resources p {
+            font-size:2.15vw;
+            display:block;
+            margin-bottom: 25%; 
+            margin-left:7%;
+            margin-top:-25%;
+            width:50%;
+        }
+
+        a{
+            font-size:2.15vw;
         }
 
 }
