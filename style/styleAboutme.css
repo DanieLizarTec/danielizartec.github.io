@@ -207,6 +207,17 @@ a{
     font-size:1.2vw;
 }
 
+#title_name_daniel{
+    font-family: 'Times New Roman'; 
+    color: black; 
+    white-space: nowrap; 
+    font-size:2vw; 
+    margin-left:5%; 
+    height: 10%; 
+    margin-top: 1%; 
+    text-align: center;
+}
+
 /* For Vertical Mobile/Tablet */
 @media only screen and (max-width: 900px) and (max-height: 900px) and (orientation: portrait), 
        only screen and (max-width: 900px) and  (orientation: portrait) {
@@ -268,7 +279,7 @@ a{
         #text_info_content{
             color:black;
             font-size:2.15vw;
-            margin-top:15%;
+            margin-top:10%;
             margin-bottom:20%;
             text-align: justify;
             padding:2%;
@@ -299,7 +310,7 @@ a{
             height: 15vw;
             margin-right:4%;
             margin-top:2%;
-            margin-left:2%;
+            margin-left:1%;
             font-size:2vw;
             border-radius:1%;
         }
@@ -307,6 +318,17 @@ a{
 
         a{
             font-size:2.15vw;
+        }
+
+        #title_name_daniel{
+            font-family: 'Times New Roman'; 
+            color: black; 
+            white-space: nowrap; 
+            font-size:2vw; 
+            margin-left:2%; 
+            height: 10%; 
+            margin-top: 1%; 
+            text-align: center;
         }
 
 }
