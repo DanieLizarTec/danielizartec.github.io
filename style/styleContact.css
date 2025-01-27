@@ -247,14 +247,14 @@ div#container_window_info{
         
         #button_send {
             position:absolute;
-            width: 15vw; 
+            width: 16vw; 
             height: 7vw;
             font-size: 2.15vw; 
             font-style: italic;
             top: 3%; 
             left: 20%; 
             margin-top:225%;
-            margin-left:45%;
+            margin-left:40%;
             
             padding:0.1vw;
             background-color: #5ca1a1;
