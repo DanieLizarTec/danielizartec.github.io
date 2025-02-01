@@ -141,10 +141,10 @@ div#container_window_info{
             display:flex;
             width: 61.8vw;
             height: 90vw;
-            margin-left: 2%;
+            margin-left: 2.25%;
             margin-right: 2%;
             overflow-y: none; 
-            background: url("");
+            background: url("../resources/DanielLizarteCaceres_Curriculum2024_mobile.png");
             background-color:#dbf6fe;
             margin-top:0.7%;
             z-index:2;
@@ -157,10 +157,6 @@ div#container_window_info{
              
         }
 
-
-        
-
-        
 
 }
 
