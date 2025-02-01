@@ -469,7 +469,7 @@ details > summary::before {
         }
 
 
-        #info_content_container {
+        #info_content_container_1 {
     
             display:flex;
             width: 61.8vw;
@@ -487,6 +487,15 @@ details > summary::before {
             overflow: hidden; 
             
              
+        }
+
+        #div_content{
+            background-color: #e2fdfd;
+            margin-left:0%;
+            width: 70%;
+            height: 100%;
+            margin-top:0%;
+        
         }
 
 
