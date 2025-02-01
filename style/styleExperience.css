@@ -11,7 +11,7 @@ h1{
     color:yellow;
 }
 
-/* Body Learning */
+/* Body Experience */
 body#initExperience {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -42,7 +42,7 @@ div#container_window_info{
 
 }
 
-#container_bar_learning {
+#container_bar_experience {
     display: flex;
     align-items: flex-start;
     width: 80vw; 
@@ -51,7 +51,7 @@ div#container_window_info{
     margin-top:15.8%;
 }
 
-#title_learning {
+#title_experience {
     width: 20vw; 
     height: 2vw;
     font-size: 2vw; 
@@ -185,7 +185,7 @@ details > summary::before {
 }
 
 
-#title_learning_area{
+#title_experience_area{
     text-align: center; 
     font-size:5vw; 
     margin:0;
@@ -408,28 +408,27 @@ details > summary::before {
        only screen and (max-width: 900px) and  (orientation: portrait) {
 
 
-
         div#container_window_info{
             display: block;
             width: 65vw; 
-            height: 45vw; 
-            
-            background-image: url("../resources/window_info.png");
+            height: 95vw; 
+            font-size:2.15vw;
+            background-image: url("../resources/window_info_mobile.png");
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
             position: absolute;
             
-            
             left: 50%;
-            transform: translateY(-12%) translateX(-50%) scale(1.5);
+            transform: translateY(-50%) translateX(-50%) scale(1.5); 
             overflow: hidden;
             z-index:1;
         
         }
 
-        #container_bar_learning{
-            margin-top:0.5%;
+        #container_bar_experience{
+            margin-top:-0.3%;
+            font-size:2.15vw;
            
         }
 
@@ -454,6 +453,19 @@ details > summary::before {
         #prodat_contrato_title{
             font-size:1.25vw;
             
+        }
+
+        #button_back {
+            width: 10vw;
+            height: 4.2vw;
+            font-size: 2.15vw;
+            font-style: italic;
+            color: black;
+            margin-top: 0.2%;
+            margin-left: 37.67%;
+            padding: 0%;
+            display: none;
+            border: 0.3vw solid rgb(0, 128, 105);
         }
 
 
