@@ -376,6 +376,21 @@ details > summary::before {
     margin-top:30%;
 }
 
+#img_appia_1{
+    margin-left: 80%; 
+    margin-top:-55%; 
+    width: 6vw; 
+    height: 6vw; 
+
+}
+
+#img_appia_2{
+    margin-left: 65%; 
+    margin-top:-30%; 
+    width: 6vw; 
+    height: 6vw;
+}
+
 #button_fisco_text{
     font-family: 'Times New Roman', Times, serif; 
     font-weight: bold; 
@@ -468,56 +483,7 @@ details > summary::before {
         
         }
 
-        #button_fisco{
-            font-size: 1.75vw; 
-            
-        }
-
-        #button_fisco_text{
-
-            font-family: 'Times New Roman', Times, serif; 
-            font-weight: bold; 
-            color:blue; 
-            font-style: italic; 
-            font-size: 1.65vw; 
-            margin-left:16%;
-            cursor: pointer; 
-
-            
-        }
-
-        #prodat_contrato_title {
-            color: rgb(68, 131, 248);
-            font-weight: bold;
-            font-family: 'Times New Roman', Times, serif;
-            padding-right: 2%;
-            width: 150%;
-            height: 5%;
-            margin: 0; 
-            text-align: right;
-        }
-
-        #appia_contrato_title {
-            color: rgb(68, 131, 248);
-            font-weight: bold;
-            font-family: 'Times New Roman', Times, serif;
-            padding-right: 2%;
-            width: 150%;
-            height: 5%;
-            margin: 0; 
-            text-align: right;
-        }
-
-        #fisco_contrato_title {
-            color: rgb(68, 131, 248);
-            font-weight: bold;
-            font-family: 'Times New Roman', Times, serif;
-            padding-right: 2%;
-            width: 150%;
-            height: 5%;
-            margin: 0; 
-            text-align: right;
-        }
+  
 
         #button_back {
             width: 10vw;
@@ -571,6 +537,8 @@ details > summary::before {
             font-size:6vw;
         }
 
+        /* PRODAT MOBILE */
+
         #p_prodat_tareas{
             display:none;
         }
@@ -583,14 +551,6 @@ details > summary::before {
             font-size:2.15vw; 
             line-height: 3vw; 
             margin:0; 
-        }
-
-        #p_appia_habs{
-            display:none;
-        }
-
-        #p_fisco_habs{
-            display:none;
         }
 
         #img_prodat_1 {
@@ -613,6 +573,105 @@ details > summary::before {
             width: 12vw;
             height: 12vw;
         }
+
+        #prodat_contrato_title {
+            color: rgb(68, 131, 248);
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding-right: 2%;
+            width: 150%;
+            height: 5%;
+            margin: 0; 
+            text-align: right;
+        }
+
+        /* APPIA MOBILE */
+
+        #appia_contrato_title {
+            color: rgb(129, 189, 107); 
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding-right: 2%;
+            width: 150%;
+            height: 5%;
+            margin: 0; 
+            text-align: right;
+        }
+
+
+        #p_appia_tareas{
+            display:none;
+        }
+
+        #p_appia_habs{
+            padding-top:2%; 
+            padding-left:2%; 
+            padding-right:2%; 
+            text-align: justify; 
+            font-size:2.15vw; 
+            line-height: 3vw; 
+            margin:0; 
+        }
+
+        #img_appia_1 {
+            margin-left: 58.1%;
+            margin-top: 29%;
+            width: 15.5vw;
+            height: 15vw;
+        }
+    
+        #img_appia_2 {
+            margin-left: 6%;
+            margin-top: -40%;
+            width: 18vw;
+            height: 15vw;
+        }
+    
+        #img_appia_3 {
+            margin-left: 66%;
+            margin-top: -39%;
+            width: 12vw;
+            height: 12vw;
+        }
+
+
+
+        /* FISCO MOBILE */
+
+        #p_fisco_habs{
+            display:none;
+        }
+
+        #button_fisco{
+            font-size: 1.75vw; 
+            
+        }
+
+        #button_fisco_text{
+
+            font-family: 'Times New Roman', Times, serif; 
+            font-weight: bold; 
+            color:blue; 
+            font-style: italic; 
+            font-size: 1.65vw; 
+            margin-left:16%;
+            cursor: pointer; 
+
+            
+        }
+
+        #fisco_contrato_title {
+            color: rgb(68, 131, 248);
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding-right: 2%;
+            width: 150%;
+            height: 5%;
+            margin: 0; 
+            text-align: right;
+        }
+
+       
 
 
 
