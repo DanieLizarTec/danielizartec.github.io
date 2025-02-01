@@ -470,7 +470,7 @@ details > summary::before {
             font-weight: bold;
             font-family: 'Times New Roman', Times, serif;
             padding-right: 2%;
-            width: 100%;
+            width: 150%;
             height: 5%;
             margin: 0; 
             text-align: right;
@@ -525,7 +525,7 @@ details > summary::before {
         }
 
         #init_text_experience{
-            font-size:5vw;
+            font-size:6vw;
         }
 
         #p_prodat_habs{
