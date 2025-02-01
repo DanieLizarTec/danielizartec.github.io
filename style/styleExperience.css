@@ -200,6 +200,14 @@ details > summary::before {
     margin:0;
 }
 
+#img_laptop_web{
+    width: 10vw; 
+    height: 10vw;
+
+}
+
+
+
 #div_prodat{
     position: absolute;
     margin-top:0%;
@@ -432,6 +440,13 @@ details > summary::before {
            
         }
 
+        #img_laptop_web{
+            width: 15vw; 
+            height: 15vw;
+            margin-left:-5%;
+        
+        }
+
         #button_fisco{
             font-size: 1.75vw; 
             
@@ -497,6 +512,16 @@ details > summary::before {
             margin-top:0%;
         
         }
+
+        #title_experience_area{
+            margin-left:-35%;
+        }
+
+        #init_text_experience{
+            font-size:7vw;
+        }
+
+
 
 
      
