@@ -465,9 +465,15 @@ details > summary::before {
             
         }
 
-        #prodat_contrato_title{
-            font-size:1.25vw;
-            
+        #prodat_contrato_title {
+            color: rgb(68, 131, 248);
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding-right: 2%;
+            width: 100%;
+            height: 5%;
+            margin: 0; 
+            text-align: right;
         }
 
         #button_back {
@@ -512,6 +518,7 @@ details > summary::before {
             margin-top:0%;
         
         }
+
 
         #title_experience_area{
             margin-left:-35%;
