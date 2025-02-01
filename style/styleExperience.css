@@ -521,6 +521,17 @@ details > summary::before {
             font-size:5vw;
         }
 
+        #p_prodat_habs{
+            display:none;
+        }
+
+        #p_appia_habs{
+            display:none;
+        }
+
+        #p_fisco_habs{
+            display:none;
+        }
 
 
 
