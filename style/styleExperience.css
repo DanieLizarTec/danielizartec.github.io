@@ -648,11 +648,11 @@ details > summary::before {
             padding-right:2%; 
             text-align: justify; 
             font-size:2.15vw; 
-            line-height: 3vw; 
+            line-height: 5vw; 
             margin:0; 
         }
 
-        #img_fisco_1 {
+        /* #img_fisco_1 {
             margin-left: 31.1%;
             margin-top: -1%;
             width: 15.5vw;
@@ -671,7 +671,7 @@ details > summary::before {
             margin-top: -39%;
             width: 12vw;
             height: 12vw;
-        }
+        } */
 
         #button_fisco{
             font-size: 1.75vw; 
@@ -696,7 +696,7 @@ details > summary::before {
             font-weight: bold;
             font-family: 'Times New Roman', Times, serif;
             padding-right: 2%;
-            width: 150%;
+            width: 200%;
             height: 5%;
             margin: 0; 
             text-align: right;
