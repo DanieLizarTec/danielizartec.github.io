@@ -446,6 +446,19 @@ details > summary::before {
 }
 
 
+#img_fisco_1{
+    margin-left: 77%; 
+    margin-top:-65%; 
+    width: 9vw; 
+    height: 6vw; 
+}
+
+#img_fisco_2{
+    margin-left: 77%; margin-top:-35%; width: 7vw; height: 6vw;
+}
+
+
+
  
 /* For Vertical Mobile/Tablet */
 @media only screen and (max-width: 900px) and (max-height: 900px) and (orientation: portrait), 
@@ -648,30 +661,25 @@ details > summary::before {
             padding-right:2%; 
             text-align: justify; 
             font-size:2.15vw; 
-            line-height: 5vw; 
+            line-height: 3vw; 
             margin:0; 
         }
 
-        /* #img_fisco_1 {
-            margin-left: 31.1%;
-            margin-top: -1%;
-            width: 15.5vw;
-            height: 15vw;
+        #img_fisco_1 {
+            margin-left: 6%;
+            margin-top: 24%;
+            width: 19vw;
+            height: 12vw;
         }
 
         #img_fisco_2 {
-            margin-left: 6%;
-            margin-top: 10%;
-            width: 20vw;
-            height: 11vw;
+            margin-left: 60%;
+            margin-top: -44%;
+            width: 12vw;
+            height: 10vw;
         }
 
-        #img_fisco_3 {
-            margin-left: 66%;
-            margin-top: -39%;
-            width: 12vw;
-            height: 12vw;
-        } */
+
 
         #button_fisco{
             font-size: 1.75vw; 
@@ -700,6 +708,7 @@ details > summary::before {
             height: 5%;
             margin: 0; 
             text-align: right;
+            font-size:2.2vw;
         }
 
        
