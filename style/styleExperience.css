@@ -483,12 +483,12 @@ details > summary::before {
         
         }
 
-        #init_experience {
+        /* #init_experience {
             position: absolute;
             margin-left: 14%;
             margin-top: 14%;
             z-index: 1;
-        }
+        } */
 
         #container_bar_experience{
             margin-top:-0.3%;
