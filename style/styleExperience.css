@@ -638,8 +638,39 @@ details > summary::before {
 
         /* FISCO MOBILE */
 
-        #p_fisco_habs{
+        #p_fisco_tareas{
             display:none;
+        }
+
+        #p_fisco_prodat_habs{
+            padding-top:2%; 
+            padding-left:2%; 
+            padding-right:2%; 
+            text-align: justify; 
+            font-size:2.15vw; 
+            line-height: 3vw; 
+            margin:0; 
+        }
+
+        #img_fisco_1 {
+            margin-left: 31.1%;
+            margin-top: -1%;
+            width: 15.5vw;
+            height: 15vw;
+        }
+
+        #img_fisco_2 {
+            margin-left: 6%;
+            margin-top: 10%;
+            width: 20vw;
+            height: 11vw;
+        }
+
+        #img_fisco_3 {
+            margin-left: 66%;
+            margin-top: -39%;
+            width: 12vw;
+            height: 12vw;
         }
 
         #button_fisco{
