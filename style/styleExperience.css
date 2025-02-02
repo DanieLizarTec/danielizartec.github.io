@@ -486,7 +486,7 @@ details > summary::before {
         #init_experience {
             
             padding-top:0%;
-            margin-top: 14%;
+            margin-top: 37%;
 
            
         }
@@ -721,7 +721,8 @@ details > summary::before {
 
 
         #button_fisco{
-            font-size: 1.75vw; 
+            font-size: 2.2vw;
+            margin-left:-8%; 
             
         }
 
@@ -731,7 +732,7 @@ details > summary::before {
             font-weight: bold; 
             color:blue; 
             font-style: italic; 
-            font-size: 1.65vw; 
+            font-size: 2.2vw; 
             margin-left:16%;
             cursor: pointer; 
 
