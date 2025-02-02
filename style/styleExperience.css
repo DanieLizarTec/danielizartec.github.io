@@ -374,6 +374,7 @@ details > summary::before {
     padding:2%; 
     font-size: 2vw; 
     margin-top:30%;
+    cursor: pointer;
 }
 
 #img_appia_1{
@@ -722,7 +723,8 @@ details > summary::before {
 
         #button_fisco{
             font-size: 2.2vw;
-            margin-left:-8%; 
+            margin-left:-3%; 
+            cursor: pointer;
             
         }
 
@@ -733,7 +735,7 @@ details > summary::before {
             color:blue; 
             font-style: italic; 
             font-size: 2.2vw; 
-            margin-left:16%;
+            margin-left:-5%;
             cursor: pointer; 
 
             
@@ -769,7 +771,7 @@ details > summary::before {
 
     #button_fisco{
         font-size: 1.75vw; 
-        
+        cursor: pointer;
     }
 
     #button_fisco_text{
@@ -797,6 +799,8 @@ details > summary::before {
 
     #button_fisco{
         font-size: 1.75vw; 
+        cursor: pointer;
+    
         
     }
 
