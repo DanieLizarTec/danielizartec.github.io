@@ -1164,6 +1164,7 @@ details > summary::before {
         width: 80%;
         height: 7.5px;
         margin-left: 60%;
+        display:none;
     }
 
     
