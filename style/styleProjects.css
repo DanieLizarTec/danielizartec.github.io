@@ -1148,7 +1148,7 @@ details > summary::before {
         }
 
         #init_text_projects{
-            font-size:8vw;
+            font-size:6vw;
         }
 
         #img_projects_web{
@@ -1158,7 +1158,7 @@ details > summary::before {
         }
 
         #mas_info{
-            font-size:4vw;
+            font-size:3vw;
         }
 
         #div_info_github{
@@ -1167,7 +1167,7 @@ details > summary::before {
 
         #info_github{
             margin-top:-30%;
-            font-size:4vw;
+            font-size:3vw;
         }
 
         #div_ent_com_virt,  #div_tall_tec_music, 
@@ -1226,6 +1226,7 @@ details > summary::before {
         width: 80%;
         height: 7.5px;
         margin-left: -65%;
+        margin-top:-2%;
         
     }
 
