@@ -1145,6 +1145,7 @@ details > summary::before {
 
         #title_projects_area{
             margin-left:-20%;
+            margin-top:40%;
         }
 
         #init_text_projects{
@@ -1168,6 +1169,10 @@ details > summary::before {
         #info_github{
             margin-top:-30%;
             font-size:3vw;
+        }
+
+        ::-webkit-scrollbar {
+            -webkit-appearance: none;
         }
 
         #div_ent_com_virt,  #div_tall_tec_music, 
