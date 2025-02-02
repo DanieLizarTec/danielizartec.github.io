@@ -1143,6 +1143,10 @@ details > summary::before {
         
         }
 
+        #p_ing_soft_web_tareas{
+            font-size:2.2vw;
+        }
+
         #title_projects_area{
             margin-left:-20%;
             margin-top:40%;
@@ -1182,8 +1186,14 @@ details > summary::before {
         #div_intel_art, #div_iot, #div_dockerlabs{
             height: 95%;
             overflow-y: scroll;
-            font-size:2.2vw;
+            font-size:2.2vw;  
         } 
+        
+        #div_ing_soft_web::-webkit-scrollbar{
+            width: 6px; /* Ajusta el tamaño de la barra */
+            background-color: rgba(0, 0, 0, 0.1); /* Color de fondo */
+        }
+
 
         
         #redes_in_title,
@@ -1231,7 +1241,7 @@ details > summary::before {
         width: 80%;
         height: 7.5px;
         margin-left: -65%;
-        margin-top:-2%;
+        margin-top:-6%;
         
     }
 
