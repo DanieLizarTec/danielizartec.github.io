@@ -616,6 +616,7 @@ details > summary::before {
             height: 5%;
             margin: 0; 
             text-align: right;
+            font-size:2.15vw;
         }
 
         /* APPIA MOBILE */
@@ -628,6 +629,7 @@ details > summary::before {
             width: 150%;
             height: 5%;
             margin: 0; 
+            font-size:2.15vw;
             text-align: right;
         }
 
