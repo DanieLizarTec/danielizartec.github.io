@@ -483,12 +483,13 @@ details > summary::before {
         
         }
 
-        /* #init_experience {
-            position: absolute;
-            margin-left: 14%;
+        #init_experience {
+            
+            padding-top:0%;
             margin-top: 14%;
-            z-index: 1;
-        } */
+
+           
+        }
 
         #container_bar_experience{
             margin-top:-0.3%;
@@ -563,6 +564,17 @@ details > summary::before {
             display:none;
         }
 
+        #div_prodat{
+            position: absolute;
+            margin-top:0%;
+            display: none;
+            background-color: #e2fdfd;
+            width: 44.15vw;
+            height:95%;
+            z-index: 1;
+
+        }
+
         #p_prodat_habs{
             padding-top:2%; 
             padding-left:2%; 
@@ -618,6 +630,16 @@ details > summary::before {
             text-align: right;
         }
 
+        #div_appia{
+            position: absolute;
+            margin-top:0%;
+            display: none;
+            background-color: #e2fdfd;
+            width: 44.15vw;
+            height:95%;
+            z-index: 1;
+        }
+
 
         #p_appia_tareas{
             display:none;
@@ -660,6 +682,16 @@ details > summary::before {
 
         #p_fisco_tareas{
             display:none;
+        }
+
+        #div_fisco{
+            position: absolute;
+            margin-top:0%;
+            display: none;
+            background-color: #e2fdfd;
+            width: 44.15vw;
+            height:95%;
+            z-index: 1;
         }
 
         #p_fisco_habs{
