@@ -1187,11 +1187,39 @@ details > summary::before {
             height: 95%;
             overflow-y: scroll;
             font-size:2.2vw;  
+            -webkit-overflow-scrolling: touch; 
         } 
         
-        #div_ing_soft_web::-webkit-scrollbar{
-            width: 6px; /* Ajusta el tamaño de la barra */
-            background-color: rgba(0, 0, 0, 0.1); /* Color de fondo */
+        #div_ent_com_virt::-webkit-scrollbar, 
+        #div_tall_tec_music::-webkit-scrollbar, 
+        #div_sist_int::-webkit-scrollbar, 
+        #div_gest_cares::-webkit-scrollbar, 
+        #div_cybersec::-webkit-scrollbar, 
+        #div_aiw::-webkit-scrollbar, 
+        #div_redes_in::-webkit-scrollbar, 
+        #div_ing_soft_web::-webkit-scrollbar, 
+        #div_gest_proy::-webkit-scrollbar, 
+        #div_intel_art::-webkit-scrollbar, 
+        #div_iot::-webkit-scrollbar, 
+        #div_dockerlabs::-webkit-scrollbar {
+            width: 6px;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        #div_ent_com_virt::-webkit-scrollbar-thumb, 
+        #div_tall_tec_music::-webkit-scrollbar-thumb, 
+        #div_sist_int::-webkit-scrollbar-thumb, 
+        #div_gest_cares::-webkit-scrollbar-thumb, 
+        #div_cybersec::-webkit-scrollbar-thumb, 
+        #div_aiw::-webkit-scrollbar-thumb, 
+        #div_redes_in::-webkit-scrollbar-thumb, 
+        #div_ing_soft_web::-webkit-scrollbar-thumb, 
+        #div_gest_proy::-webkit-scrollbar-thumb, 
+        #div_intel_art::-webkit-scrollbar-thumb, 
+        #div_iot::-webkit-scrollbar-thumb, 
+        #div_dockerlabs::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.4); /* Color de la scrollbar */
+            border-radius: 4px;
         }
 
 
