@@ -1184,7 +1184,7 @@ details > summary::before {
         #div_sist_int, #div_gest_cares, 
         #div_cybersec, #div_aiw, #div_redes_in, 
         #div_ing_soft_web, #div_gest_proy, 
-        #div_intel_art, #div_iot, #div_dockerlabs{
+        #div_intel_art, #div_iot, #div_dockerlabs, #bar_menu_info{
             height: 95%;
             overflow-y: scroll;
             font-size:2.2vw;  
@@ -1202,8 +1202,9 @@ details > summary::before {
         #div_gest_proy::-webkit-scrollbar, 
         #div_intel_art::-webkit-scrollbar, 
         #div_iot::-webkit-scrollbar, 
-        #div_dockerlabs::-webkit-scrollbar {
-            width: 6px;
+        #div_dockerlabs::-webkit-scrollbar,
+        #bar_menu_info::-webkit-scrollbar {
+            width: 4px;
             background-color: rgba(0, 0, 0, 0.1);
         }
 
@@ -1218,8 +1219,9 @@ details > summary::before {
         #div_gest_proy::-webkit-scrollbar-thumb, 
         #div_intel_art::-webkit-scrollbar-thumb, 
         #div_iot::-webkit-scrollbar-thumb, 
-        #div_dockerlabs::-webkit-scrollbar-thumb {
-            background-color: rgba(0, 0, 0, 0.4); /* Color de la scrollbar */
+        #div_dockerlabs::-webkit-scrollbar-thumb,
+        #bar_menu_info::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.4); 
             border-radius: 4px;
         }
 
