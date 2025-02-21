@@ -236,7 +236,7 @@ details > summary {
 details > ul {
     display:block;
     margin-left: 0.7vw;
-    padding-left: 1vw;
+    padding-left: 0.25vw;
     padding-top: 0.5vw;
     list-style-type: none;
     font-size: 1.25vw;
