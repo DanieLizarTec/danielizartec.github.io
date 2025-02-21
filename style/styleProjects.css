@@ -1264,12 +1264,15 @@ details > summary::before {
 /* For Vertical Mobile */
 @media only screen and (max-width: 500px) and (orientation: portrait){
 
+    #title_projects{
+        font-size:2.15vw;
+    }
     
     #bar_menu_info{
         font-size:2.15vw;
 
     }
-    
+
     #searchInput {
         width: 80%;
         height: 8px;
@@ -1278,7 +1281,20 @@ details > summary::before {
         font-size:2.15vw;
     }
 
-
+    #ing_soft_web,
+    #redes_in,
+    #gest_proy,
+    #iot,
+    #aiw,
+    #intel_art,
+    #ent_com_virt,
+    #gest_cares,
+    #cybersec,
+    #sist_int,
+    #tall_tec_music {
+        font-size: 2.15vw;
+    }
+    
     
 
     #redes_in_title,
@@ -1289,10 +1305,6 @@ details > summary::before {
     #cybersec_title{
             width:200vw;
             font-size:2.5vw;
-    }
-
-    #ing_soft_web {
-        font-size: 1.1vw;
     }
 
     #iot_title{
