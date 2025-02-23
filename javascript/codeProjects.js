@@ -448,19 +448,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const canvas = document.getElementById("pdf-canvas");
     const ctx = canvas.getContext("2d");
 
+    let pdfDoc = null;  // Almacena el documento PDF cargado
+    let pageNum = 1;    // Página actual
+    let totalPages = 0; // Total de páginas
+
+    function renderizarPagina(num) {
+        pdfDoc.getPage(num).then(page => {
+            let viewport = page.getViewport({ scale: 1.2 });
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+
+            let renderContext = {
+                canvasContext: ctx,
+                viewport: viewport
+            };
+            page.render(renderContext);
+        });
+
+        document.getElementById("page-num").textContent = `Página ${num} de ${totalPages}`;
+    }
+
     function cargarPDF() {
         pdfjsLib.getDocument(url).promise.then(pdf => {
-            pdf.getPage(1).then(page => { // Muestra la primera página
-                let viewport = page.getViewport({ scale: 1.2 }); // Ajusta la escala según necesites
-                canvas.width = viewport.width;
-                canvas.height = viewport.height;
-
-                let renderContext = {
-                    canvasContext: ctx,
-                    viewport: viewport
-                };
-                page.render(renderContext);
-            });
+            pdfDoc = pdf;
+            totalPages = pdf.numPages;
+            renderizarPagina(pageNum); // Mostrar la primera página
         }).catch(error => {
             console.error("Error al cargar el PDF:", error);
             document.getElementById("div_dl_maquina_trust").innerHTML =
@@ -478,10 +490,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 div_dl_maquina_trust.style.zIndex = zIndexUpdate++;
                 div_content.style.marginLeft = "0%";
 
-                // Cargar el PDF solo la primera vez
                 if (!canvas.hasAttribute("data-loaded")) {
                     cargarPDF();
-                    canvas.setAttribute("data-loaded", "true"); // Marcamos que ya se cargó
+                    canvas.setAttribute("data-loaded", "true"); 
                 }
 
             } else {
@@ -491,7 +502,24 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    // Botón para página anterior
+    document.getElementById("prev-page").addEventListener("click", function () {
+        if (pageNum > 1) {
+            pageNum--;
+            renderizarPagina(pageNum);
+        }
+    });
+
+    // Botón para página siguiente
+    document.getElementById("next-page").addEventListener("click", function () {
+        if (pageNum < totalPages) {
+            pageNum++;
+            renderizarPagina(pageNum);
+        }
+    });
 });
+
 
 
 if(dl_maquina_injection){
