@@ -409,6 +409,7 @@ var dl_maquina_pinguinazo= document.getElementById("dl_maquina_pinguinazo");
 
 
 //Event Listeners
+const isMobile = window.matchMedia("(max-width: 768px)").matches; // Detecta móvil
 
 if(dockerlabs){
     dockerlabs.addEventListener("click", function () {
@@ -423,102 +424,35 @@ if(dockerlabs){
 
 }
 
-// if(dl_maquina_trust){
-//     dl_maquina_trust.addEventListener("click", function () {
-//         if (div_dl_maquina_trust.style.display === 'none' || div_dl_maquina_trust.style.display === '') {
-//             hideAllDivsExcept(div_dl_maquina_trust);
-//             div_dl_maquina_trust.style.display = 'block'; 
-//             button_exit_pdf.style.visibility = 'visible'; 
-//             div_dl_maquina_trust.style.zIndex = zIndexUpdate++;
-//             div_content.style.marginLeft = "0%";
-
-            
-//         } else {
-//             div_dl_maquina_trust.style.display = 'none'; 
-//             button_exit_pdf.style.visibility = 'hidden'; 
-//             div_content.style.marginLeft = "30%";
-//         }
-//     });
-    
-// }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const url = "../resources/writeups/wupdl_maquina_trust.pdf"; // Ruta del PDF
-    const canvas = document.getElementById("pdf-canvas");
-    const ctx = canvas.getContext("2d");
+if(dl_maquina_trust){
 
-    let pdfDoc = null;  
-    let pageNum = 1;    
-    let totalPages = 0;
+    const pdfUrl = "../resources/writeups/wupdl_maquina_trust.pdf"; 
+    if (isMobile) {
+        div_dl_maquina_trust.innerHTML = `<a href="${pdfUrl}" download>
+            <button id="button_download_pdf">Máquina Trust <br>Descargar PDF <br> ⬇️</button>
+        </a>`;
+        div_dl_maquina_trust.style = "text-align:center;"
+    } 
 
-    function renderizarPagina(num) {
-        pdfDoc.getPage(num).then(page => {
-            let viewport = page.getViewport({ scale: 1.5 });  // Ajusta la escala para mejor calidad
-            canvas.width = viewport.width;
-            canvas.height = viewport.height;  // Se ajusta a la altura real de la página
-
-            let renderContext = {
-                canvasContext: ctx,
-                viewport: viewport
-            };
-
-            page.render(renderContext);
-        });
-
-        document.getElementById("page-num").textContent = `Página ${num} de ${totalPages}`;
-    }
-
-    function cargarPDF() {
-        pdfjsLib.getDocument(url).promise.then(pdf => {
-            pdfDoc = pdf;
-            totalPages = pdf.numPages;
-            renderizarPagina(pageNum); 
-        }).catch(error => {
-            console.error("Error al cargar el PDF:", error);
-            document.getElementById("div_dl_maquina_trust").innerHTML =
-                `<p>Error al cargar el PDF. <a href="${url}" download>Descargar PDF</a></p>`;
-        });
-    }
-
-    if (dl_maquina_trust) {
-        dl_maquina_trust.addEventListener("click", function () {
-            if (div_dl_maquina_trust.style.display === 'none' || div_dl_maquina_trust.style.display === '') {
-                hideAllDivsExcept(div_dl_maquina_trust);
-                div_dl_maquina_trust.style.display = 'block';
-                button_exit_pdf.style.visibility = 'visible';
-                div_dl_maquina_trust.style.zIndex = zIndexUpdate++;
-                div_content.style.marginLeft = "0%";
-
-                if (!canvas.hasAttribute("data-loaded")) {
-                    cargarPDF();
-                    canvas.setAttribute("data-loaded", "true"); 
-                }
-
-            } else {
-                div_dl_maquina_trust.style.display = 'none';
-                button_exit_pdf.style.visibility = 'hidden';
+    dl_maquina_trust.addEventListener("click", function () {
+        if (div_dl_maquina_trust.style.display === 'none' || div_dl_maquina_trust.style.display === '') {
+            hideAllDivsExcept(div_dl_maquina_trust);
+            div_dl_maquina_trust.style.display = 'block'; 
+            if (!isMobile)
+             button_exit_pdf.style.visibility = 'visible'; 
+            div_dl_maquina_trust.style.zIndex = zIndexUpdate++;
+            div_content.style.marginLeft = "0%";
+        } else {
+            div_dl_maquina_trust.style.display = 'none'; 
+            if (!isMobile)
+                button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
-            }
-        });
-    }
-
-    document.getElementById("prev-page").addEventListener("click", function () {
-        if (pageNum > 1) {
-            pageNum--;
-            renderizarPagina(pageNum);
         }
     });
-
-    document.getElementById("next-page").addEventListener("click", function () {
-        if (pageNum < totalPages) {
-            pageNum++;
-            renderizarPagina(pageNum);
-        }
-    });
-});
-
-
+    
+}
 
 if(dl_maquina_injection){
     dl_maquina_injection.addEventListener("click", function () {
