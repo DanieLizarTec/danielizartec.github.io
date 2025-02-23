@@ -448,20 +448,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const canvas = document.getElementById("pdf-canvas");
     const ctx = canvas.getContext("2d");
 
-    let pdfDoc = null;  // Almacena el documento PDF cargado
-    let pageNum = 1;    // Página actual
-    let totalPages = 0; // Total de páginas
+    let pdfDoc = null;  
+    let pageNum = 1;    
+    let totalPages = 0;
 
     function renderizarPagina(num) {
         pdfDoc.getPage(num).then(page => {
-            let viewport = page.getViewport({ scale: 1.2 });
+            let viewport = page.getViewport({ scale: 1.5 });  // Ajusta la escala para mejor calidad
             canvas.width = viewport.width;
-            canvas.height = viewport.height;
+            canvas.height = viewport.height;  // Se ajusta a la altura real de la página
 
             let renderContext = {
                 canvasContext: ctx,
                 viewport: viewport
             };
+
             page.render(renderContext);
         });
 
@@ -472,7 +473,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pdfjsLib.getDocument(url).promise.then(pdf => {
             pdfDoc = pdf;
             totalPages = pdf.numPages;
-            renderizarPagina(pageNum); // Mostrar la primera página
+            renderizarPagina(pageNum); 
         }).catch(error => {
             console.error("Error al cargar el PDF:", error);
             document.getElementById("div_dl_maquina_trust").innerHTML =
@@ -480,7 +481,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Evento para abrir/cerrar el PDF
     if (dl_maquina_trust) {
         dl_maquina_trust.addEventListener("click", function () {
             if (div_dl_maquina_trust.style.display === 'none' || div_dl_maquina_trust.style.display === '') {
@@ -503,7 +503,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Botón para página anterior
     document.getElementById("prev-page").addEventListener("click", function () {
         if (pageNum > 1) {
             pageNum--;
@@ -511,7 +510,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Botón para página siguiente
     document.getElementById("next-page").addEventListener("click", function () {
         if (pageNum < totalPages) {
             pageNum++;
