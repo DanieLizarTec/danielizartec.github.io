@@ -423,22 +423,76 @@ if(dockerlabs){
 
 }
 
-if(dl_maquina_trust){
-    dl_maquina_trust.addEventListener("click", function () {
-        if (div_dl_maquina_trust.style.display === 'none' || div_dl_maquina_trust.style.display === '') {
-            hideAllDivsExcept(div_dl_maquina_trust);
-            div_dl_maquina_trust.style.display = 'block'; 
-            button_exit_pdf.style.visibility = 'visible'; 
-            div_dl_maquina_trust.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
-        } else {
-            div_dl_maquina_trust.style.display = 'none'; 
-            button_exit_pdf.style.visibility = 'hidden'; 
-            div_content.style.marginLeft = "30%";
-        }
-    });
+// if(dl_maquina_trust){
+//     dl_maquina_trust.addEventListener("click", function () {
+//         if (div_dl_maquina_trust.style.display === 'none' || div_dl_maquina_trust.style.display === '') {
+//             hideAllDivsExcept(div_dl_maquina_trust);
+//             div_dl_maquina_trust.style.display = 'block'; 
+//             button_exit_pdf.style.visibility = 'visible'; 
+//             div_dl_maquina_trust.style.zIndex = zIndexUpdate++;
+//             div_content.style.marginLeft = "0%";
+
+            
+//         } else {
+//             div_dl_maquina_trust.style.display = 'none'; 
+//             button_exit_pdf.style.visibility = 'hidden'; 
+//             div_content.style.marginLeft = "30%";
+//         }
+//     });
     
-}
+// }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const url = "../resources/writeups/wupdl_maquina_trust.pdf"; // Ruta del PDF
+    const canvas = document.getElementById("pdf-canvas");
+    const ctx = canvas.getContext("2d");
+
+    function cargarPDF() {
+        pdfjsLib.getDocument(url).promise.then(pdf => {
+            pdf.getPage(1).then(page => { // Muestra la primera página
+                let viewport = page.getViewport({ scale: 1.2 }); // Ajusta la escala según necesites
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+
+                let renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+                page.render(renderContext);
+            });
+        }).catch(error => {
+            console.error("Error al cargar el PDF:", error);
+            document.getElementById("div_dl_maquina_trust").innerHTML =
+                `<p>Error al cargar el PDF. <a href="${url}" download>Descargar PDF</a></p>`;
+        });
+    }
+
+    // Evento para abrir/cerrar el PDF
+    if (dl_maquina_trust) {
+        dl_maquina_trust.addEventListener("click", function () {
+            if (div_dl_maquina_trust.style.display === 'none' || div_dl_maquina_trust.style.display === '') {
+                hideAllDivsExcept(div_dl_maquina_trust);
+                div_dl_maquina_trust.style.display = 'block';
+                button_exit_pdf.style.visibility = 'visible';
+                div_dl_maquina_trust.style.zIndex = zIndexUpdate++;
+                div_content.style.marginLeft = "0%";
+
+                // Cargar el PDF solo la primera vez
+                if (!canvas.hasAttribute("data-loaded")) {
+                    cargarPDF();
+                    canvas.setAttribute("data-loaded", "true"); // Marcamos que ya se cargó
+                }
+
+            } else {
+                div_dl_maquina_trust.style.display = 'none';
+                button_exit_pdf.style.visibility = 'hidden';
+                div_content.style.marginLeft = "30%";
+            }
+        });
+    }
+});
+
 
 if(dl_maquina_injection){
     dl_maquina_injection.addEventListener("click", function () {
