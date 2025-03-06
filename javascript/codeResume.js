@@ -27,7 +27,7 @@ if (button_resume) {
 
 if(info_content_container){
 
-    const pdfUrlCV = "../resources/writeups/DanielLizarteCaceres_Curriculum2024.pdf"; 
+    const pdfUrlCV = "../resources/DanielLizarteCaceres_Curriculum2024.pdf"; 
     
         div_cv_mobile.innerHTML = `<a href="${pdfUrlCV}" download>
             <button id="button_download_pdf_cv">Daniel Lizarte Cáceres<br>Currículum Vitae 2025 <br>Descargar PDF Móviles<br> ⬇️</button>
