@@ -1219,7 +1219,7 @@ details > summary::before {
 
         #bar_menu_info{
 
-            overflow-y: scroll;
+            overflow-y:scroll;
             font-size:2.2vw;  
             -webkit-overflow-scrolling: touch; 
             overflow-x:hidden;
@@ -1320,7 +1320,7 @@ details > summary::before {
             margin-top:0%;
             display: none;
             background-color: #e2fdfd;
-            width: 44.15vw;
+            width: 43.15vw;
             height:90vw;
             z-index: 1;
         }
@@ -1337,7 +1337,7 @@ details > summary::before {
             font-weight: bold;
             cursor: pointer;
             transition: background-color 0.3s;
-            margin-top: 80%;
+            margin-top: 82.5%;
         }
 
         
