@@ -841,10 +841,12 @@ details > summary::before {
     }
 
     #p_appia_tareas {
+        padding-top:0.25%;
         font-size: 1.1vw;
     }
 
     #p_appia_habs {
+        padding-top:0.25%;
         font-size: 1.1vw;
     }
 
