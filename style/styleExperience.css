@@ -831,9 +831,26 @@ details > summary::before {
         margin-top: -39%;
     }
 
+    #appia_title {
+        font-size: 3.25vw;
+    }
+
     #appia_contrato_title{
-        font-size:1.25vw;
+        font-size:1.2vw;
         
+    }
+
+    #p_appia_tareas {
+        font-size: 1.1vw;
+    }
+
+    #p_appia_habs {
+        font-size: 1.1vw;
+    }
+
+    #img_appia_1 {
+      margin-top: -52%;
+
     }
 
 }
