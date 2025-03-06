@@ -409,7 +409,8 @@ var dl_maquina_pinguinazo= document.getElementById("dl_maquina_pinguinazo");
 
 
 //Event Listeners
-const isMobile = window.matchMedia("(max-width: 768px)").matches;
+const isMobile  = window.matchMedia("(max-width: 768px)").matches;
+const isLandscape = window.matchMedia("(min-width: 600px) and (max-width: 950px) and (orientation: landscape)").matches;
 
 
 document.querySelectorAll("details").forEach((details) => {
@@ -439,7 +440,7 @@ if(dockerlabs){
 if(dl_maquina_trust){
 
     const pdfUrlTrust = "../resources/writeups/wupdl_maquina_trust.pdf"; 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_trust.innerHTML = `<a href="${pdfUrlTrust}" download>
             <button id="button_download_pdf">Máquina Trust <br>Descargar PDF Móviles <br> ⬇️</button>
         </a>`;
@@ -450,13 +451,13 @@ if(dl_maquina_trust){
         if (div_dl_maquina_trust.style.display === 'none' || div_dl_maquina_trust.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_trust);
             div_dl_maquina_trust.style.display = 'block'; 
-            if (!isMobile)
-             button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape))
+            button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_trust.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            //div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_trust.style.display = 'none'; 
-            if (!isMobile){
+            if (!(isMobile || isLandscape)){
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -468,7 +469,7 @@ if(dl_maquina_trust){
 if (dl_maquina_injection) {
     const pdfUrlInjection = "../resources/writeups/wupdl_maquina_injection.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_injection.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlInjection}" download>
@@ -482,12 +483,12 @@ if (dl_maquina_injection) {
         if (div_dl_maquina_injection.style.display === 'none' || div_dl_maquina_injection.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_injection);
             div_dl_maquina_injection.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_injection.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_injection.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -498,7 +499,7 @@ if (dl_maquina_injection) {
 if (dl_maquina_upload) {
     const pdfUrlUpload = "../resources/writeups/wupdl_maquina_upload.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_upload.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlUpload}" download>
@@ -512,12 +513,12 @@ if (dl_maquina_upload) {
         if (div_dl_maquina_upload.style.display === 'none' || div_dl_maquina_upload.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_upload);
             div_dl_maquina_upload.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_upload.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_upload.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -530,7 +531,7 @@ if (dl_maquina_upload) {
 if (dl_maquina_vacaciones) {
     const pdfUrlVacaciones = "../resources/writeups/wupdl_maquina_vacaciones.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_vacaciones.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlVacaciones}" download>
@@ -544,12 +545,12 @@ if (dl_maquina_vacaciones) {
         if (div_dl_maquina_vacaciones.style.display === 'none' || div_dl_maquina_vacaciones.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_vacaciones);
             div_dl_maquina_vacaciones.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_vacaciones.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_vacaciones.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -560,7 +561,7 @@ if (dl_maquina_vacaciones) {
 if (dl_maquina_breakmyssh) {
     const pdfUrlBreakmyssh = "../resources/writeups/wupdl_maquina_breakmyssh.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_breakmyssh.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlBreakmyssh}" download>
@@ -574,12 +575,12 @@ if (dl_maquina_breakmyssh) {
         if (div_dl_maquina_breakmyssh.style.display === 'none' || div_dl_maquina_breakmyssh.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_breakmyssh);
             div_dl_maquina_breakmyssh.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_breakmyssh.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_breakmyssh.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -591,7 +592,7 @@ if (dl_maquina_borazuwarahctf) {
     const pdfUrlBorazuwarahctf = "../resources/writeups/wupdl_maquina_borazuwarahctf.pdf"; 
      
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_borazuwarahctf.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlBorazuwarahctf}" download>
@@ -605,12 +606,12 @@ if (dl_maquina_borazuwarahctf) {
         if (div_dl_maquina_borazuwarahctf.style.display === 'none' || div_dl_maquina_borazuwarahctf.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_borazuwarahctf);
             div_dl_maquina_borazuwarahctf.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_borazuwarahctf.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_borazuwarahctf.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -623,7 +624,7 @@ if (dl_maquina_firsthacking) {
     const pdfUrlFirsthacking = "../resources/writeups/wupdl_maquina_firsthacking.pdf"; 
      
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_firsthacking.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlFirsthacking}" download>
@@ -637,12 +638,12 @@ if (dl_maquina_firsthacking) {
         if (div_dl_maquina_firsthacking.style.display === 'none' || div_dl_maquina_firsthacking.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_firsthacking);
             div_dl_maquina_firsthacking.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_firsthacking.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_firsthacking.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -654,7 +655,7 @@ if (dl_maquina_obsession) {
     const pdfUrlObsession = "../resources/writeups/wupdl_maquina_obsession.pdf"; 
      
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_obsession.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlObsession}" download>
@@ -668,12 +669,12 @@ if (dl_maquina_obsession) {
         if (div_dl_maquina_obsession.style.display === 'none' || div_dl_maquina_obsession.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_obsession);
             div_dl_maquina_obsession.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_obsession.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_obsession.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -685,7 +686,7 @@ if (dl_maquina_walkingcms) {
     const pdfUrlWalkingcms = "../resources/writeups/wupdl_maquina_walkingcms.pdf"; 
      
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_walkingcms.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlWalkingcms}" download>
@@ -699,12 +700,12 @@ if (dl_maquina_walkingcms) {
         if (div_dl_maquina_walkingcms.style.display === 'none' || div_dl_maquina_walkingcms.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_walkingcms);
             div_dl_maquina_walkingcms.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_walkingcms.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_walkingcms.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -716,7 +717,7 @@ if (dl_maquina_capypenguin) {
     const pdfUrlCapypenguin = "../resources/writeups/wupdl_maquina_capypenguin.pdf"; 
      
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_capypenguin.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlCapypenguin}" download>
@@ -730,12 +731,12 @@ if (dl_maquina_capypenguin) {
         if (div_dl_maquina_capypenguin.style.display === 'none' || div_dl_maquina_capypenguin.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_capypenguin);
             div_dl_maquina_capypenguin.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_capypenguin.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_capypenguin.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -748,7 +749,7 @@ if (dl_maquina_pn) {
     const pdfUrlPn = "../resources/writeups/wupdl_maquina_pn.pdf"; 
      
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_pn.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlPn}" download>
@@ -762,12 +763,12 @@ if (dl_maquina_pn) {
         if (div_dl_maquina_pn.style.display === 'none' || div_dl_maquina_pn.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_pn);
             div_dl_maquina_pn.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_pn.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_pn.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -779,7 +780,7 @@ if (dl_maquina_anonymouspingu) {
     const pdfUrlAnonymouspingu = "../resources/writeups/wupdl_maquina_anonymouspingu.pdf"; 
      
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_anonymouspingu.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlAnonymouspingu}" download>
@@ -793,12 +794,12 @@ if (dl_maquina_anonymouspingu) {
         if (div_dl_maquina_anonymouspingu.style.display === 'none' || div_dl_maquina_anonymouspingu.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_anonymouspingu);
             div_dl_maquina_anonymouspingu.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_anonymouspingu.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_anonymouspingu.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -810,7 +811,7 @@ if (dl_maquina_library) {
     const pdfUrlLibrary = "../resources/writeups/wupdl_maquina_library.pdf"; 
      
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_library.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlLibrary}" download>
@@ -824,12 +825,12 @@ if (dl_maquina_library) {
         if (div_dl_maquina_library.style.display === 'none' || div_dl_maquina_library.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_library);
             div_dl_maquina_library.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_library.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_library.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -840,7 +841,7 @@ if (dl_maquina_library) {
 if (dl_maquina_hiddencat) {
     const pdfUrlHiddencat = "../resources/writeups/wupdl_maquina_hiddencat.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_hiddencat.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlHiddencat}" download>
@@ -854,12 +855,12 @@ if (dl_maquina_hiddencat) {
         if (div_dl_maquina_hiddencat.style.display === 'none' || div_dl_maquina_hiddencat.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_hiddencat);
             div_dl_maquina_hiddencat.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_hiddencat.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_hiddencat.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -871,7 +872,7 @@ if (dl_maquina_hiddencat) {
 if (dl_maquina_dockerlabs) {
     const pdfUrlDockerlabs = "../resources/writeups/wupdl_maquina_dockerlabs.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_dockerlabs.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlDockerlabs}" download>
@@ -885,12 +886,12 @@ if (dl_maquina_dockerlabs) {
         if (div_dl_maquina_dockerlabs.style.display === 'none' || div_dl_maquina_dockerlabs.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_dockerlabs);
             div_dl_maquina_dockerlabs.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_dockerlabs.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_dockerlabs.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -901,7 +902,7 @@ if (dl_maquina_dockerlabs) {
 if (dl_maquina_whereismywebshell) {
     const pdfUrlWhereismywebshell = "../resources/writeups/wupdl_maquina_whereismywebshell.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_whereismywebshell.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlWhereismywebshell}" download>
@@ -915,12 +916,12 @@ if (dl_maquina_whereismywebshell) {
         if (div_dl_maquina_whereismywebshell.style.display === 'none' || div_dl_maquina_whereismywebshell.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_whereismywebshell);
             div_dl_maquina_whereismywebshell.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_whereismywebshell.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_whereismywebshell.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -931,7 +932,7 @@ if (dl_maquina_whereismywebshell) {
 if (dl_maquina_amor) {
     const pdfUrlAmor = "../resources/writeups/wupdl_maquina_amor.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_amor.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlAmor}" download>
@@ -945,12 +946,12 @@ if (dl_maquina_amor) {
         if (div_dl_maquina_amor.style.display === 'none' || div_dl_maquina_amor.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_amor);
             div_dl_maquina_amor.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_amor.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_amor.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -962,7 +963,7 @@ if (dl_maquina_amor) {
 if (dl_maquina_chocolatelovers) {
     const pdfUrlChocolatelovers = "../resources/writeups/wupdl_maquina_chocolatelovers.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_chocolatelovers.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlChocolatelovers}" download>
@@ -976,12 +977,12 @@ if (dl_maquina_chocolatelovers) {
         if (div_dl_maquina_chocolatelovers.style.display === 'none' || div_dl_maquina_chocolatelovers.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_chocolatelovers);
             div_dl_maquina_chocolatelovers.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_chocolatelovers.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_chocolatelovers.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -992,7 +993,7 @@ if (dl_maquina_chocolatelovers) {
 if (dl_maquina_secretjenkins) {
     const pdfUrlSecretjenkins = "../resources/writeups/wupdl_maquina_secretjenkins.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_secretjenkins.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlSecretjenkins}" download>
@@ -1006,12 +1007,12 @@ if (dl_maquina_secretjenkins) {
         if (div_dl_maquina_secretjenkins.style.display === 'none' || div_dl_maquina_secretjenkins.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_secretjenkins);
             div_dl_maquina_secretjenkins.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_secretjenkins.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_secretjenkins.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -1022,7 +1023,7 @@ if (dl_maquina_secretjenkins) {
 if (dl_maquina_aguademayo) {
     const pdfUrlAguademayo = "../resources/writeups/wupdl_maquina_aguademayo.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_aguademayo.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlAguademayo}" download>
@@ -1036,12 +1037,12 @@ if (dl_maquina_aguademayo) {
         if (div_dl_maquina_aguademayo.style.display === 'none' || div_dl_maquina_aguademayo.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_aguademayo);
             div_dl_maquina_aguademayo.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_aguademayo.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_aguademayo.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -1052,7 +1053,7 @@ if (dl_maquina_aguademayo) {
 if (dl_maquina_buscalove) {
     const pdfUrlBuscalove = "../resources/writeups/wupdl_maquina_buscalove.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_buscalove.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlBuscalove}" download>
@@ -1066,12 +1067,12 @@ if (dl_maquina_buscalove) {
         if (div_dl_maquina_buscalove.style.display === 'none' || div_dl_maquina_buscalove.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_buscalove);
             div_dl_maquina_buscalove.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_buscalove.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_buscalove.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -1083,7 +1084,7 @@ if (dl_maquina_buscalove) {
 if (dl_maquina_consolelog) {
     const pdfUrlConsolelog = "../resources/writeups/wupdl_maquina_consolelog.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_consolelog.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlConsolelog}" download>
@@ -1097,12 +1098,12 @@ if (dl_maquina_consolelog) {
         if (div_dl_maquina_consolelog.style.display === 'none' || div_dl_maquina_consolelog.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_consolelog);
             div_dl_maquina_consolelog.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_consolelog.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_consolelog.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -1113,7 +1114,7 @@ if (dl_maquina_consolelog) {
 if (dl_maquina_escolares) {
     const pdfUrlEscolares = "../resources/writeups/wupdl_maquina_escolares.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_escolares.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlEscolares}" download>
@@ -1127,12 +1128,12 @@ if (dl_maquina_escolares) {
         if (div_dl_maquina_escolares.style.display === 'none' || div_dl_maquina_escolares.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_escolares);
             div_dl_maquina_escolares.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_escolares.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_escolares.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -1143,7 +1144,7 @@ if (dl_maquina_escolares) {
 if (dl_maquina_los40ladrones) {
     const pdfUrlLos40ladrones = "../resources/writeups/wupdl_maquina_los40ladrones.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_los40ladrones.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlLos40ladrones}" download>
@@ -1157,12 +1158,12 @@ if (dl_maquina_los40ladrones) {
         if (div_dl_maquina_los40ladrones.style.display === 'none' || div_dl_maquina_los40ladrones.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_los40ladrones);
             div_dl_maquina_los40ladrones.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_los40ladrones.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_los40ladrones.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -1173,7 +1174,7 @@ if (dl_maquina_los40ladrones) {
 if (dl_maquina_move) {
     const pdfUrlMove = "../resources/writeups/wupdl_maquina_move.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_move.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlMove}" download>
@@ -1187,12 +1188,12 @@ if (dl_maquina_move) {
         if (div_dl_maquina_move.style.display === 'none' || div_dl_maquina_move.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_move);
             div_dl_maquina_move.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_move.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_move.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -1204,7 +1205,7 @@ if (dl_maquina_move) {
 if (dl_maquina_nodeclimb) {
     const pdfUrlNodeclimb = "../resources/writeups/wupdl_maquina_nodeclimb.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_nodeclimb.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlNodeclimb}" download>
@@ -1218,12 +1219,12 @@ if (dl_maquina_nodeclimb) {
         if (div_dl_maquina_nodeclimb.style.display === 'none' || div_dl_maquina_nodeclimb.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_nodeclimb);
             div_dl_maquina_nodeclimb.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_nodeclimb.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_nodeclimb.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -1234,7 +1235,7 @@ if (dl_maquina_nodeclimb) {
 if (dl_maquina_picadilly) {
     const pdfUrlPicadilly = "../resources/writeups/wupdl_maquina_picadilly.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_picadilly.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlPicadilly}" download>
@@ -1248,12 +1249,12 @@ if (dl_maquina_picadilly) {
         if (div_dl_maquina_picadilly.style.display === 'none' || div_dl_maquina_picadilly.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_picadilly);
             div_dl_maquina_picadilly.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_picadilly.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_picadilly.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
@@ -1264,7 +1265,7 @@ if (dl_maquina_picadilly) {
 if (dl_maquina_pinguinazo) {
     const pdfUrlPinguinazo = "../resources/writeups/wupdl_maquina_pinguinazo.pdf"; 
 
-    if (isMobile) {
+    if ((isMobile || isLandscape)) {
         div_dl_maquina_pinguinazo.innerHTML = `
             <div style="text-align:center;">
                 <a href="${pdfUrlPinguinazo}" download>
@@ -1278,12 +1279,12 @@ if (dl_maquina_pinguinazo) {
         if (div_dl_maquina_pinguinazo.style.display === 'none' || div_dl_maquina_pinguinazo.style.display === '') {
             hideAllDivsExcept(div_dl_maquina_pinguinazo);
             div_dl_maquina_pinguinazo.style.display = 'block'; 
-            if (!isMobile) button_exit_pdf.style.visibility = 'visible'; 
+            if (!(isMobile || isLandscape)) button_exit_pdf.style.visibility = 'visible'; 
             div_dl_maquina_pinguinazo.style.zIndex = zIndexUpdate++;
-            div_content.style.marginLeft = "0%";
+            // div_content.style.marginLeft = "0%";
         } else {
             div_dl_maquina_pinguinazo.style.display = 'none'; 
-            if (!isMobile) {
+            if (!(isMobile || isLandscape)) {
                 button_exit_pdf.style.visibility = 'hidden'; 
                 div_content.style.marginLeft = "30%";
             }
