@@ -240,6 +240,7 @@ details > ul {
     padding-top: 0.5vw;
     list-style-type: none;
     font-size: 1.25vw;
+    padding-right: 1.67vw;
     
     
 }
@@ -1247,7 +1248,7 @@ details > summary::before {
         }
         
         #ing_soft_web {
-            font-size: 1.1vw;
+            font-size: 2.2vw;
         }
 
         #iot_contrato_title{
@@ -1294,6 +1295,7 @@ details > summary::before {
             margin-top: 80%;
         }
 
+        
 
         
         
@@ -1385,6 +1387,11 @@ details > summary::before {
         margin-bottom: 1%;
     }
 
+    #p_dockerlabs_habs {
+
+        line-height: 3.7vw;
+        padding-bottom: 27vw;
+    }
     
     
 }
