@@ -411,6 +411,16 @@ var dl_maquina_pinguinazo= document.getElementById("dl_maquina_pinguinazo");
 //Event Listeners
 const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
+
+document.querySelectorAll("details").forEach((details) => {
+    details.addEventListener("toggle", function () {
+        if (this.open) {
+            this.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+    });
+});
+
+
 if(dockerlabs){
     dockerlabs.addEventListener("click", function () {
         if (div_dockerlabs.style.display === 'none' || div_dockerlabs.style.display === '') {
