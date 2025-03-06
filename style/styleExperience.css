@@ -541,6 +541,27 @@ details > summary::before {
              
         }
 
+
+        #info_content_container_1 {
+    
+            display:flex;
+            width: 61.8vw;
+            height: 90vw;
+            margin-left: 2.25%;
+            margin-right: 2%;
+            overflow-y: none; 
+            background-color:#dbf6fe;
+            margin-top:0.7%;
+            z-index:2;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-size:2.15vw;
+            overflow: hidden; 
+            
+             
+        }
+        
         #div_content{
             background-color: #e2fdfd;
             margin-left:0%;
@@ -790,6 +811,27 @@ details > summary::before {
     }
 
     #prodat_contrato_title{
+        font-size:1.25vw;
+        
+    }
+
+    #p_prodat_tareas {
+        
+        font-size: 1.1vw;
+       
+    }
+
+    #p_prodat_habs {
+        padding-top:0.5%;
+        font-size: 1.1vw;
+    }
+
+    #img_prodat_2 {
+
+        margin-top: -39%;
+    }
+
+    #appia_contrato_title{
         font-size:1.25vw;
         
     }
