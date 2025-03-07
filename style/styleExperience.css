@@ -616,6 +616,18 @@ details > summary::before {
 
         /* PRODAT MOBILE */
 
+        #prodat_title{
+            font-size:3vw; 
+            color: rgb(68, 131, 248); 
+            font-weight: bold; 
+            font-family: 'Times New Roman', Times, serif; 
+            margin:0; 
+            padding-left:6%; 
+            width: 50vw;
+            margin-top:3%;
+        }
+        
+
         #p_prodat_tareas{
             font-size:2.2vw;
         }
@@ -675,6 +687,17 @@ details > summary::before {
         }
 
         /* APPIA MOBILE */
+
+        #appia_title{
+            font-size:3vw; 
+            color: rgb(158, 230, 132); 
+            font-weight: bold; 
+            font-family: 'Times New Roman', Times, serif; 
+            margin:0; 
+            padding-left:3%; 
+            width: 57vw;
+            margin-top:3%;
+        }
 
         #appia_contrato_title {
             color: rgb(129, 189, 107); 
