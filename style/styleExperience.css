@@ -622,8 +622,8 @@ details > summary::before {
             font-weight: bold; 
             font-family: 'Times New Roman', Times, serif; 
             margin:0; 
-            padding-left:6%; 
-            width: 50vw;
+            padding-left:3%; 
+            width: 30vw;
             margin-top:3%;
         }
         
@@ -760,6 +760,17 @@ details > summary::before {
 
 
         /* FISCO MOBILE */
+
+        #fisco_title {
+            font-size: 3.5vw;
+            color: rgb(36, 91, 193);
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 1%;
+            padding-left: 3%;
+            width: 25vw;
+            margin-top: 3.25%;
+        }
 
         #p_fisco_tareas{
             font-size:2.2vw;
