@@ -587,6 +587,7 @@ details > summary::before {
             overflow-y: scroll;
             font-size:2.2vw;  
             -webkit-overflow-scrolling: touch; 
+            scrollbar-color: rgba(150, 150, 150, 0.551)  #a2fafa; 
         } 
 
         
@@ -595,23 +596,15 @@ details > summary::before {
         #div_fisco::-webkit-scrollbar{
             width: 4px;
             background-color: rgba(0, 0, 0, 0.1);
+            scrollbar-color: rgba(150, 150, 150, 0.551)  #a2fafa; 
         }
 
-        #div_ent_com_virt::-webkit-scrollbar-thumb, 
-        #div_tall_tec_music::-webkit-scrollbar-thumb, 
-        #div_sist_int::-webkit-scrollbar-thumb, 
-        #div_gest_cares::-webkit-scrollbar-thumb, 
-        #div_cybersec::-webkit-scrollbar-thumb, 
-        #div_aiw::-webkit-scrollbar-thumb, 
-        #div_redes_in::-webkit-scrollbar-thumb, 
-        #div_ing_soft_web::-webkit-scrollbar-thumb, 
-        #div_gest_proy::-webkit-scrollbar-thumb, 
-        #div_intel_art::-webkit-scrollbar-thumb, 
-        #div_iot::-webkit-scrollbar-thumb, 
-        #div_dockerlabs::-webkit-scrollbar-thumb,
-        #bar_menu_info::-webkit-scrollbar-thumb {
+        #div_prodat:-webkit-scrollbar-thumb, 
+        #div_appia::-webkit-scrollbar-thumb, 
+        #div_fisco::-webkit-scrollbar-thumb{
             background-color: rgba(0, 0, 0, 0.4); 
             border-radius: 4px;
+            scrollbar-color: rgba(150, 150, 150, 0.551)  #a2fafa; 
         }
 
         /* PRODAT MOBILE */
@@ -630,6 +623,8 @@ details > summary::before {
 
         #p_prodat_tareas{
             font-size:2.2vw;
+            padding-right: 4%;
+            
         }
 
         #div_prodat{
@@ -646,7 +641,7 @@ details > summary::before {
         #p_prodat_habs{
             padding-top:2%; 
             padding-left:2%; 
-            padding-right:2%; 
+            padding-right: 4%; 
             text-align: justify; 
             font-size:2.15vw; 
             line-height: 3vw; 
@@ -678,7 +673,7 @@ details > summary::before {
             color: rgb(68, 131, 248);
             font-weight: bold;
             font-family: 'Times New Roman', Times, serif;
-            padding-right: 2%;
+            padding-right: 4%;
             width: 150%;
             height: 5%;
             margin: 0; 
@@ -690,7 +685,7 @@ details > summary::before {
 
         #appia_title{
             font-size:3vw; 
-            color: rgb(158, 230, 132); 
+            color: rgb(129, 189, 107); 
             font-weight: bold; 
             font-family: 'Times New Roman', Times, serif; 
             margin:0; 
@@ -702,7 +697,7 @@ details > summary::before {
             color: rgb(129, 189, 107); 
             font-weight: bold;
             font-family: 'Times New Roman', Times, serif;
-            padding-right: 2%;
+            padding-right: 4%;
             width: 150%;
             height: 5%;
             margin: 0; 
@@ -723,12 +718,13 @@ details > summary::before {
 
         #p_appia_tareas{
             font-size:2.2vw;
+            padding-right: 4%;
         }
 
         #p_appia_habs{
             padding-top:2%; 
             padding-left:2%; 
-            padding-right:2%; 
+            padding-right: 4%;
             text-align: justify; 
             font-size:2.15vw; 
             line-height: 3vw; 
@@ -774,6 +770,7 @@ details > summary::before {
         #p_fisco_tareas{
             font-size:2.2vw;
             line-height: 2.7vw;
+            padding-right: 4%;
         }
 
         #div_fisco{
@@ -789,7 +786,7 @@ details > summary::before {
         #p_fisco_habs{
             padding-top:2%; 
             padding-left:2%; 
-            padding-right:2%; 
+            padding-right: 4%;
             text-align: justify; 
             font-size:2.15vw; 
             line-height: 3vw; 
@@ -836,7 +833,7 @@ details > summary::before {
             color: rgb(68, 131, 248);
             font-weight: bold;
             font-family: 'Times New Roman', Times, serif;
-            padding-right: 2%;
+            padding-right: 4%;
             width: 200%;
             height: 5%;
             margin: 0; 
