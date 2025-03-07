@@ -580,10 +580,44 @@ details > summary::before {
             font-size:6vw;
         }
 
+        #div_prodat, 
+        #div_appia, 
+        #div_fisco{
+            height: 59%;
+            overflow-y: scroll;
+            font-size:2.2vw;  
+            -webkit-overflow-scrolling: touch; 
+        } 
+
+        
+        #div_prodat::-webkit-scrollbar, 
+        #div_appia::-webkit-scrollbar, 
+        #div_fisco::-webkit-scrollbar{
+            width: 4px;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        #div_ent_com_virt::-webkit-scrollbar-thumb, 
+        #div_tall_tec_music::-webkit-scrollbar-thumb, 
+        #div_sist_int::-webkit-scrollbar-thumb, 
+        #div_gest_cares::-webkit-scrollbar-thumb, 
+        #div_cybersec::-webkit-scrollbar-thumb, 
+        #div_aiw::-webkit-scrollbar-thumb, 
+        #div_redes_in::-webkit-scrollbar-thumb, 
+        #div_ing_soft_web::-webkit-scrollbar-thumb, 
+        #div_gest_proy::-webkit-scrollbar-thumb, 
+        #div_intel_art::-webkit-scrollbar-thumb, 
+        #div_iot::-webkit-scrollbar-thumb, 
+        #div_dockerlabs::-webkit-scrollbar-thumb,
+        #bar_menu_info::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.4); 
+            border-radius: 4px;
+        }
+
         /* PRODAT MOBILE */
 
         #p_prodat_tareas{
-            display:none;
+            font-size:2.2vw;
         }
 
         #div_prodat{
@@ -666,7 +700,7 @@ details > summary::before {
 
 
         #p_appia_tareas{
-            display:none;
+            font-size:2.2vw;
         }
 
         #p_appia_habs{
@@ -681,7 +715,7 @@ details > summary::before {
 
         #img_appia_1 {
             margin-left: 58.1%;
-            margin-top: 29%;
+            margin-top: 4%;
             width: 15.5vw;
             height: 15vw;
         }
@@ -705,7 +739,8 @@ details > summary::before {
         /* FISCO MOBILE */
 
         #p_fisco_tareas{
-            display:none;
+            font-size:2.2vw;
+            line-height: 2.7vw;
         }
 
         #div_fisco{
@@ -730,7 +765,7 @@ details > summary::before {
 
         #img_fisco_1 {
             margin-left: 6%;
-            margin-top: 24%;
+            margin-top: 11%;
             width: 19vw;
             height: 12vw;
         }
