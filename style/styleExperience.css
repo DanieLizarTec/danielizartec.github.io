@@ -528,28 +528,7 @@ details > summary::before {
             height: 90vw;
             margin-left: 2.25%;
             margin-right: 2%;
-            overflow-y: none; 
-            background-color:#dbf6fe;
-            margin-top:0.7%;
-            z-index:2;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            font-size:2.15vw;
-            overflow: hidden; 
-            
-             
-        }
-
-
-        #info_content_container_1 {
-    
-            display:flex;
-            width: 61.8vw;
-            height: 90vw;
-            margin-left: 2.25%;
-            margin-right: 2%;
-            overflow-y: none; 
+            overflow-y: scroll; 
             background-color:#dbf6fe;
             margin-top:0.7%;
             z-index:2;
@@ -580,31 +559,32 @@ details > summary::before {
             font-size:6vw;
         }
 
-        #div_prodat, 
-        #div_appia, 
+        ::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+
+        #div_prodat,
+        #div_appia,
         #div_fisco{
             height: 59%;
             overflow-y: scroll;
             font-size:2.2vw;  
             -webkit-overflow-scrolling: touch; 
-            scrollbar-color: rgba(150, 150, 150, 0.551)  #a2fafa; 
         } 
 
         
-        #div_prodat::-webkit-scrollbar, 
-        #div_appia::-webkit-scrollbar, 
+        #div_prodat::-webkit-scrollbar,
+        #div_appia::-webkit-scrollbar,
         #div_fisco::-webkit-scrollbar{
             width: 4px;
-            background-color: rgba(0, 0, 0, 0.1);
-            scrollbar-color: rgba(150, 150, 150, 0.551)  #a2fafa; 
+            background-color: rgba(255, 0, 0, 0.1);
         }
 
-        #div_prodat:-webkit-scrollbar-thumb, 
-        #div_appia::-webkit-scrollbar-thumb, 
+        #div_prodat::-webkit-scrollbar-thumb,
+        #div_appia::-webkit-scrollbar-thumb,
         #div_fisco::-webkit-scrollbar-thumb{
             background-color: rgba(0, 0, 0, 0.4); 
             border-radius: 4px;
-            scrollbar-color: rgba(150, 150, 150, 0.551)  #a2fafa; 
         }
 
         /* PRODAT MOBILE */
