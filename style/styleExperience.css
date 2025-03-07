@@ -694,9 +694,8 @@ details > summary::before {
             font-weight: bold; 
             font-family: 'Times New Roman', Times, serif; 
             margin:0; 
-            padding-left:3%; 
+            padding-left:6%; 
             width: 40vw;
-            margin-top:3%;
         }
 
         #appia_contrato_title {
