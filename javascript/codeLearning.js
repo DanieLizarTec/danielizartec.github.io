@@ -153,6 +153,14 @@ if (button_learning) {
     });
 }
 
+document.querySelectorAll("details").forEach((details) => {
+    details.addEventListener("toggle", function () {
+        if (this.open) {
+            this.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+    });
+});
+
 //Búsqueda
 var listaAsignaturas = [
     //Matemáticas
