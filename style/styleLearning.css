@@ -118,6 +118,33 @@ div#container_window_info{
     padding: 0.1vw;
 }
 
+#init_text_learning{
+    text-align: center; 
+    font-size:5vw;
+    margin:0;
+}
+
+#init_text_learning_optativa{
+    text-align: center;
+    font-size:1.25vw; 
+    margin:0; 
+    color: rgb(72, 226, 1); 
+    font-style: italic;
+}
+
+#init_text_learning_honor{
+    text-align: center; 
+    font-size:1.25vw;
+    margin:0; 
+    color: #d2a836; 
+    font-style: italic;
+}
+
+#img_learning_web{
+    width: 10vw;
+    height: 10vw;
+}
+
 
 
 #info_content_container_1 {
@@ -2893,24 +2920,75 @@ details > summary::before {
         div#container_window_info{
             display: block;
             width: 65vw; 
-            height: 45vw; 
-            
-            background-image: url("../resources/window_info.png");
+            height: 95vw; 
+            font-size:2.15vw;
+            background-image: url("../resources/window_info_mobile.png");
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
             position: absolute;
             
             left: 50%;
-            transform: translateY(-12%) translateX(-50%) scale(1.5);
+            transform: translateY(-50%) translateX(-50%) scale(1.5); 
             overflow: hidden;
             z-index:1;
         
         }
 
         #container_bar_learning{
-            margin-top:0.5%;
+            margin-top:-0.3%;
+            font-size:2.15vw;
            
+        }
+
+        #info_content_container_1 {
+    
+            display:flex;
+            width: 61.8vw;
+            height: 90vw;
+            margin-left: 2.25%;
+            margin-right: 2%;
+            overflow-y:scroll; 
+            background: url("");
+            background-color:#dbf6fe;
+            margin-top:0.7%;
+            z-index:2;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-size:2.15vw;
+            overflow: hidden; 
+            
+             
+        }
+
+        #button_back {
+            width: 10vw;
+            height: 4.2vw;
+            font-size: 2.15vw;
+            font-style: italic;
+            color: black;
+            margin-top: 0.2%;
+            margin-left: -8.8%;
+            padding: 0%;
+            display: none;
+            border: 0.3vw solid rgb(0, 128, 105);
+        }
+
+        #searchInput {
+            width: 79%;
+            height: 8.5px;
+            margin-left: -19%;
+            margin-top: 1%;
+        }
+
+        #div_content{
+            background-color: #e2fdfd;
+            margin-left:0%;
+            width: 70%;
+            height: 100%;
+            margin-top:0%;
+        
         }
 
         
@@ -2925,51 +3003,51 @@ details > summary::before {
             display: none;
         }
 
-    #mat_discreta_title, 
-    #alg_lineal_title, 
-    #met_num_title, 
-    #intro_prog_title, 
-    #dis_fun_prog_title,
-    #org_comp_title, 
-    #ing_inter_title, 
-    #ent_com_virt_title, 
-    #redes_in_title, 
-    #com_ingles_title, 
-    #google_cybersecurity_title {
-        margin-left: 0%;
-        text-align: center;
-        width: 200vw;
-        font-size:2.5vw; 
-    }
+        #mat_discreta_title, 
+        #alg_lineal_title, 
+        #met_num_title, 
+        #intro_prog_title, 
+        #dis_fun_prog_title,
+        #org_comp_title, 
+        #ing_inter_title, 
+        #ent_com_virt_title, 
+        #redes_in_title, 
+        #com_ingles_title, 
+        #google_cybersecurity_title {
+            margin-left: 0%;
+            text-align: center;
+            width: 200vw;
+            font-size:2.5vw; 
+        }
+        
     
-   
-    #prog_obj_title,  
-    #eda_i_title, 
-    #eda_ii_title,
-    #sis_dist_title, 
-    #aiw_title, 
-    #iot_title, 
-    #cybersec_title{
-        margin-left: 0%;
-        text-align: center;
-        width: 200vw;
-        font-size:2vw; 
-        margin-bottom: 1%;
-    }
+        #prog_obj_title,  
+        #eda_i_title, 
+        #eda_ii_title,
+        #sis_dist_title, 
+        #aiw_title, 
+        #iot_title, 
+        #cybersec_title{
+            margin-left: 0%;
+            text-align: center;
+            width: 200vw;
+            font-size:2vw; 
+            margin-bottom: 1%;
+        }
 
-    #iot_contrato_title{
-        font-size: 1vw;
-        margin-bottom: 1%;
-    }
+        #iot_contrato_title{
+            font-size: 1vw;
+            margin-bottom: 1%;
+        }
 
-    #upf_info_title{
-        font-size: 2vw;
-    }
+        #upf_info_title{
+            font-size: 2vw;
+        }
 
-    #google_cybersecurity_contrato_title{
-        font-size: 1vw;
-        margin-bottom: 1%;
-    }
+        #google_cybersecurity_contrato_title{
+            font-size: 1vw;
+            margin-bottom: 1%;
+        }
         
         
 
@@ -2978,10 +3056,49 @@ details > summary::before {
 /* For Vertical Mobile */
 @media only screen and (max-width: 500px) and (orientation: portrait){
 
-    #searchInput {
-        width: 100%;
-        height: 7.75px;
-        margin-left:-20%;
+    
+    #title_learning{
+        font-size:2.15vw;
+        margin-top:1.5%;
+    }
+
+    #title_learning_area {
+        margin-left: -30%;
+        margin-top: 41%;
+    }
+
+    #init_text_learning{
+        text-align: center; 
+        font-size:7vw;
+        margin:0;
+    }
+    
+    #init_text_learning_optativa{
+        text-align: center;
+        font-size:2.75vw; 
+        margin:0; 
+        color: rgb(72, 226, 1); 
+        font-style: italic;
+    }
+    
+    #init_text_learning_honor{
+        text-align: center; 
+        font-size:2.75vw;
+        margin:0; 
+        color: #d2a836; 
+        font-style: italic;
+    }
+    
+    #img_learning_web{
+        width: 15vw;
+        height: 15vw;
+    }
+    
+    #bar_menu_info{
+        font-size:2.15vw;
+        overflow-y: scroll;
+        scrollbar-color: rgba(150, 150, 150, 0.551)  #a2fafa; 
+
     }
 
     #mat_discreta_title, 
