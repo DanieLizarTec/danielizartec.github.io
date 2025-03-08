@@ -269,10 +269,71 @@ details > summary::before {
     font-weight: bolder;
 }
 
+/* Folders */
+
+#estudios_folder{
+    width:10vw;
+}
+
+#certificaciones_folder{
+    width:14vw;
+}
+
+#asignaturas_folder{
+    width:16vw; 
+    font-size:1.3vw;
+}
+
+#mat_folder{
+    width:10vw;  
+    color: rgb(42, 88, 244); 
+    font-size:1.2vw;
+}
+
+#prog_folder{
+    color: rgb(193, 187, 12); 
+    font-size:1.2vw;
+}
+
+#sist_folder{
+    color: rgb(0, 147, 196); 
+    font-size:1.2vw;
+
+}
+
+#datos_folder{
+
+    color: rgb(55, 170, 1); 
+    font-size:1.2vw;
+}
+
+#inter_folder{
+    color: rgb(209, 76, 191); 
+    font-size:1.2vw;
+
+}
+
+#redes_folder{
+    color: rgb(223, 47, 47); 
+    font-size:1.2vw;
+
+}
+
+#etic_folder{
+    color: rgb(110, 31, 200); 
+    font-size:1.2vw;
+
+}
 
 /*Courses*/
 
+
 /*Bachillerato*/
+
+#bachillerato{
+    font-size: 1.2vw;
+}
+
 #div_bachillerato{
     position: absolute;
     margin-top:0%;
@@ -326,6 +387,13 @@ details > summary::before {
 }
 
 /*UPF Informática*/
+
+#upf_info{
+    font-size:2.2vw;
+
+}
+
+
 #div_upf_info{
     position: absolute;
     margin-top:0%;
@@ -2843,6 +2911,11 @@ details > summary::before {
 
 
 /*Certificaciones*/
+
+#google_cybersecurity{
+    font-size:1.2vw;
+}
+
 #div_google_cybersecurity {
     position: absolute;
     margin-top:0%;
@@ -3095,12 +3168,288 @@ details > summary::before {
         height: 15vw;
     }
     
+
+
+    #estudios_folder,
+    #certificaciones_folder{
+        font-size:2.5vw;
+    }
+
+    #asignaturas_folder{
+        font-size:2.4vw;
+    }
+
+    #mat_folder{
+        font-size:2.3vw;
+    }
+    
+    #prog_folder{
+        font-size:2.3vw;
+    }
+
+    #sist_folder{
+        font-size:2.3vw;
+    
+    }
+    
+    #datos_folder{
+        font-size:2.3vw;
+    }
+
+    #inter_folder{
+        font-size:2.3vw;
+    
+    }
+    
+    #redes_folder{
+        font-size:2.3vw;
+    
+    }
+    
+    #etic_folder{
+        font-size:2.3vw;
+    
+    }
+    
+
+    #bachillerato,
+    #upf_info,
+    #calculo_i,
+    #calculo_ii,
+    #mat_discreta,
+    #alg_lineal,
+    #met_num,
+    #fisica,
+    #prob,
+    #est,
+    #intro_prog,
+    #eda_i,
+    #eda_ii,
+    #prog_obj,
+    #dis_fun_prog,
+    #dis_alg,
+    #prog_paral,
+    #ing_soft_web,
+    #org_comp,
+    #sys_i,
+    #so,
+    #ing_soft,
+    #teoria_comp,
+    #sis_dist,
+    #compila,
+    #apr_auto,
+    #bases_datos,
+    #intel_art,
+    #aiw,
+    #gest_cares,
+    #tnlp,
+    #graf_ord,
+    #ing_inter,
+    #videojuegos,
+    #ent_com_virt,
+    #sist_int,
+    #redes,
+    #cripto,
+    #redes_in,
+    #iot,
+    #cybersec,
+    #intro_tic,
+    #com_ingles,
+    #gest_proy,
+    #tall_tec_music,
+    #google_cybersecurity {
+        font-size: 2.2vw;
+    }
+
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
     #bar_menu_info{
-        font-size:2.15vw;
-        overflow-y: scroll;
-        scrollbar-color: rgba(150, 150, 150, 0.551)  #a2fafa; 
+
+        overflow-y:scroll;
+        font-size:2.2vw;  
+        -webkit-overflow-scrolling: touch; 
+        overflow-x:hidden;
 
     }
+
+    #div_bachillerato, #div_upf_info, #div_calculo_i, #div_mat_discreta, 
+    #div_intro_prog, #div_intro_tic, #div_calculo_ii, #div_alg_lineal, 
+    #div_eda_i, #div_org_comp, #div_redes, #div_met_num, #div_eda_ii, 
+    #div_fisica, #div_prob, #div_prog_obj, #div_sys_i, #div_dis_fun_prog, 
+    #div_est, #div_so, #div_graf_ord, #div_dis_alg, #div_apr_auto, 
+    #div_ing_inter, #div_prog_paral, #div_ing_soft, #div_bases_datos, 
+    #div_intel_art, #div_teoria_comp, #div_com_ingles, #div_sis_dist, 
+    #div_cripto, #div_compila, #div_ing_soft_web, #div_redes_in, #div_iot, 
+    #div_gest_proy, #div_aiw, #div_gest_cares, #div_videojuegos, 
+    #div_ent_com_virt, #div_sist_int, #div_cybersec, #div_tall_tec_music, 
+    #div_tnlp, #div_google_cybersecurity  {
+        height: 95%;
+        overflow-y: scroll;
+        overflow-x:hidden;
+        font-size: 2.2vw;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #div_bachillerato::-webkit-scrollbar, #div_upf_info::-webkit-scrollbar, 
+    #div_calculo_i::-webkit-scrollbar, #div_mat_discreta::-webkit-scrollbar, 
+    #div_intro_prog::-webkit-scrollbar, #div_intro_tic::-webkit-scrollbar, 
+    #div_calculo_ii::-webkit-scrollbar, #div_alg_lineal::-webkit-scrollbar, 
+    #div_eda_i::-webkit-scrollbar, #div_org_comp::-webkit-scrollbar, 
+    #div_redes::-webkit-scrollbar, #div_met_num::-webkit-scrollbar, 
+    #div_eda_ii::-webkit-scrollbar, #div_fisica::-webkit-scrollbar, 
+    #div_prob::-webkit-scrollbar, #div_prog_obj::-webkit-scrollbar, 
+    #div_sys_i::-webkit-scrollbar, #div_dis_fun_prog::-webkit-scrollbar, 
+    #div_est::-webkit-scrollbar, #div_so::-webkit-scrollbar, 
+    #div_graf_ord::-webkit-scrollbar, #div_dis_alg::-webkit-scrollbar, 
+    #div_apr_auto::-webkit-scrollbar, #div_ing_inter::-webkit-scrollbar, 
+    #div_prog_paral::-webkit-scrollbar, #div_ing_soft::-webkit-scrollbar, 
+    #div_bases_datos::-webkit-scrollbar, #div_intel_art::-webkit-scrollbar, 
+    #div_teoria_comp::-webkit-scrollbar, #div_com_ingles::-webkit-scrollbar, 
+    #div_sis_dist::-webkit-scrollbar, #div_cripto::-webkit-scrollbar, 
+    #div_compila::-webkit-scrollbar, #div_ing_soft_web::-webkit-scrollbar, 
+    #div_redes_in::-webkit-scrollbar, #div_iot::-webkit-scrollbar, 
+    #div_gest_proy::-webkit-scrollbar, #div_aiw::-webkit-scrollbar, 
+    #div_gest_cares::-webkit-scrollbar, #div_videojuegos::-webkit-scrollbar, 
+    #div_ent_com_virt::-webkit-scrollbar, #div_sist_int::-webkit-scrollbar, 
+    #div_cybersec::-webkit-scrollbar, #div_tall_tec_music::-webkit-scrollbar, 
+    #div_tnlp::-webkit-scrollbar, #div_google_cybersecurity::-webkit-scrollbar, 
+    #bar_menu_info::-webkit-scrollbar  {
+        width: 4px;
+        background-color: rgba(255, 0, 0, 0.1);
+    }
+
+    #div_bachillerato::-webkit-scrollbar-thumb, #div_upf_info::-webkit-scrollbar-thumb, 
+    #div_calculo_i::-webkit-scrollbar-thumb, #div_mat_discreta::-webkit-scrollbar-thumb, 
+    #div_intro_prog::-webkit-scrollbar-thumb, #div_intro_tic::-webkit-scrollbar-thumb, 
+    #div_calculo_ii::-webkit-scrollbar-thumb, #div_alg_lineal::-webkit-scrollbar-thumb, 
+    #div_eda_i::-webkit-scrollbar-thumb, #div_org_comp::-webkit-scrollbar-thumb, 
+    #div_redes::-webkit-scrollbar-thumb, #div_met_num::-webkit-scrollbar-thumb, 
+    #div_eda_ii::-webkit-scrollbar-thumb, #div_fisica::-webkit-scrollbar-thumb, 
+    #div_prob::-webkit-scrollbar-thumb, #div_prog_obj::-webkit-scrollbar-thumb, 
+    #div_sys_i::-webkit-scrollbar-thumb, #div_dis_fun_prog::-webkit-scrollbar-thumb, 
+    #div_est::-webkit-scrollbar-thumb, #div_so::-webkit-scrollbar-thumb, 
+    #div_graf_ord::-webkit-scrollbar-thumb, #div_dis_alg::-webkit-scrollbar-thumb, 
+    #div_apr_auto::-webkit-scrollbar-thumb, #div_ing_inter::-webkit-scrollbar-thumb, 
+    #div_prog_paral::-webkit-scrollbar-thumb, #div_ing_soft::-webkit-scrollbar-thumb, 
+    #div_bases_datos::-webkit-scrollbar-thumb, #div_intel_art::-webkit-scrollbar-thumb, 
+    #div_teoria_comp::-webkit-scrollbar-thumb, #div_com_ingles::-webkit-scrollbar-thumb, 
+    #div_sis_dist::-webkit-scrollbar-thumb, #div_cripto::-webkit-scrollbar-thumb, 
+    #div_compila::-webkit-scrollbar-thumb, #div_ing_soft_web::-webkit-scrollbar-thumb, 
+    #div_redes_in::-webkit-scrollbar-thumb, #div_iot::-webkit-scrollbar-thumb, 
+    #div_gest_proy::-webkit-scrollbar-thumb, #div_aiw::-webkit-scrollbar-thumb, 
+    #div_gest_cares::-webkit-scrollbar-thumb, #div_videojuegos::-webkit-scrollbar-thumb, 
+    #div_ent_com_virt::-webkit-scrollbar-thumb, #div_sist_int::-webkit-scrollbar-thumb, 
+    #div_cybersec::-webkit-scrollbar-thumb, #div_tall_tec_music::-webkit-scrollbar-thumb, 
+    #div_tnlp::-webkit-scrollbar-thumb, #div_google_cybersecurity::-webkit-scrollbar-thumb,
+    #bar_menu_info::-webkit-scrollbar-thumb  {
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 4px;
+    }
+
+    #p_bachillerato_tareas,
+    #p_bachillerato_habs,
+    #p_upf_info_tareas,
+    #p_upf_info_habs,
+    #p_calculo_i_tareas,
+    #p_calculo_i_habs,
+    #p_mat_discreta_tareas,
+    #p_mat_discreta_habs,
+    #p_intro_prog_tareas,
+    #p_intro_prog_habs,
+    #p_intro_tic_tareas,
+    #p_intro_tic_habs,
+    #p_calculo_ii_tareas,
+    #p_calculo_ii_habs,
+    #p_alg_lineal_tareas,
+    #p_alg_lineal_habs,
+    #p_eda_i_tareas,
+    #p_eda_i_habs,
+    #p_org_comp_tareas,
+    #p_org_comp_habs,
+    #p_redes_tareas,
+    #p_redes_habs,
+    #p_met_num_tareas,
+    #p_met_num_habs,
+    #p_eda_ii_tareas,
+    #p_eda_ii_habs,
+    #p_fisica_tareas,
+    #p_fisica_habs,
+    #p_prob_tareas,
+    #p_prob_habs,
+    #p_prog_obj_tareas,
+    #p_prog_obj_habs,
+    #p_sys_i_tareas,
+    #p_sys_i_habs,
+    #p_dis_fun_prog_tareas,
+    #p_dis_fun_prog_habs,
+    #p_est_tareas,
+    #p_est_habs,
+    #p_so_tareas,
+    #p_so_habs,
+    #p_graf_ord_tareas,
+    #p_graf_ord_habs,
+    #p_dis_alg_tareas,
+    #p_dis_alg_habs,
+    #p_apr_auto_tareas,
+    #p_apr_auto_habs,
+    #p_ing_inter_tareas,
+    #p_ing_inter_habs,
+    #p_prog_paral_tareas,
+    #p_prog_paral_habs,
+    #p_ing_soft_tareas,
+    #p_ing_soft_habs,
+    #p_bases_datos_tareas,
+    #p_bases_datos_habs,
+    #p_intel_art_tareas,
+    #p_intel_art_habs,
+    #p_teoria_comp_tareas,
+    #p_teoria_comp_habs,
+    #p_com_ingles_tareas,
+    #p_com_ingles_habs,
+    #p_sis_dist_tareas,
+    #p_sis_dist_habs,
+    #p_cripto_tareas,
+    #p_cripto_habs,
+    #p_compila_tareas,
+    #p_compila_habs,
+    #p_ing_soft_web_tareas,
+    #p_ing_soft_web_habs,
+    #p_redes_in_tareas,
+    #p_redes_in_habs,
+    #p_iot_tareas,
+    #p_iot_habs,
+    #p_gest_proy_tareas,
+    #p_gest_proy_habs,
+    #p_aiw_tareas,
+    #p_aiw_habs,
+    #p_gest_cares_tareas,
+    #p_gest_cares_habs,
+    #p_videojuegos_tareas,
+    #p_videojuegos_habs,
+    #p_ent_com_virt_tareas,
+    #p_ent_com_virt_habs,
+    #p_sist_int_tareas,
+    #p_sist_int_habs,
+    #p_cybersec_tareas,
+    #p_cybersec_habs,
+    #p_tall_tec_music_tareas,
+    #p_tall_tec_music_habs,
+    #p_tnlp_tareas,
+    #p_tnlp_habs,
+    #p_google_cybersecurity_tareas{
+        font-size: 2.2vw;
+    }
+
+    #p_google_cybersecurity_habs{
+
+        font-size: 2.2vw;
+        line-height: 3vw;
+
+    }
+
+
 
     #mat_discreta_title, 
     #alg_lineal_title, 
