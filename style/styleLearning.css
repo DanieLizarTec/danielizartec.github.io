@@ -1558,6 +1558,11 @@ details > summary::before {
     margin:0; 
 }
 
+#img_graf_ord_1{
+    margin-left: 71%;margin-top: -26%;width: 12.5vw;height: 7.5vw;
+
+}
+
 
 
 /*Diseño de Algoritmos*/
@@ -1740,6 +1745,10 @@ details > summary::before {
     font-size:1vw; 
     line-height: 1.7vw; 
     margin:0; 
+}
+
+#img_ing_inter_1{
+    margin-left: 58%;margin-top: -16%;width: 18vw;height: 8vw;
 }
 
 
@@ -2767,6 +2776,11 @@ details > summary::before {
 }
 
 
+#img_videojuegos_1{
+    margin-left: 60%;margin-top: -15.6%;width: 17.4vw;height: 8.8vw;background: rgb(209, 76, 191);padding: 0.15vw;
+}
+
+
 /*Entornos de Comunicación Virtual*/
 #div_ent_com_virt{
     position: absolute;
@@ -2818,6 +2832,18 @@ details > summary::before {
     line-height: 1.7vw; 
     margin:0; 
 }
+
+#img_ent_com_virt_1{
+    margin-left: 47%;margin-top: -25%;width: 15vw;height: 7.5vw;background: rgb(209, 76, 191);padding: 0.15vw;
+
+}
+
+
+#img_ent_com_virt_2{
+    margin-left: 86%;margin-top: -33.5%;width: 5vw;height: 8vw;background: rgb(209, 76, 191);padding: 0.15vw;
+
+}
+
 
 
 /*Sistemas Interactivos*/
@@ -2871,6 +2897,17 @@ details > summary::before {
     line-height: 1.7vw; 
     margin:0; 
 }
+
+#img_sist_int_1{
+    margin-left: 3%;margin-top: -1%;width: 14vw;height: 5vw;
+
+}
+
+
+#img_sist_int_2{
+    margin-left: 42%;margin-top: -17%;width: 25vw;height: 8vw;background: rgb(209, 76, 191);padding: 0.15vw;
+}
+
 
 
 
@@ -3911,12 +3948,71 @@ details > summary::before {
     }
 
     #img_tnlp_1 {
-        margin-left: 37%;
+        margin-left: 41%;
         margin-top: -11%;
-        width: 31vw;
+        width: 30vw;
         height: 16vw;
     }
 
+
+    #img_graf_ord_1 {
+        margin-left: 73%;
+        margin-top: -20%;
+        width: 15.5vw;
+        height: 9.5vw;
+    }
+
+    #img_ing_inter_1 {
+        margin-left: 50%;
+        margin-top: -11%;
+        width: 25vw;
+        height: 9vw;
+    }
+
+    #img_videojuegos_1 {
+        margin-left: 41%;
+        margin-top: -8.6%;
+        width: 20.4vw;
+        height: 9.8vw;
+        background: rgb(209, 76, 191);
+        padding: 0.15vw;
+    }
+
+    #img_ent_com_virt_1 {
+        margin-left: 16%;
+        margin-top: 4%;
+        width: 15vw;
+        height: 7.5vw;
+        background: rgb(209, 76, 191);
+        padding: 0.15vw;
+    }
+    
+    
+    #img_ent_com_virt_2 {
+        margin-left: 67%;
+        margin-top: -23.5%;
+        width: 6vw;
+        height: 12vw;
+        background: rgb(209, 76, 191);
+        padding: 0.15vw;
+    }
+
+    #img_sist_int_1 {
+        margin-left: 1%;
+        margin-top: -1%;
+        width: 14vw;
+        height: 5vw;
+    }
+    
+    
+    #img_sist_int_2 {
+        margin-left: 39%;
+        margin-top: -17%;
+        width: 25vw;
+        height: 8vw;
+        background: rgb(209, 76, 191);
+        padding: 0.15vw;
+    }
 
 
 
