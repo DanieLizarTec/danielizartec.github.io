@@ -907,6 +907,10 @@ details > summary::before {
     margin:0; 
 }
 
+#img_org_comp_1{
+    margin-left: 79%; margin-top:-20%; width: 9vw; height: 9vw;
+}
+
 
 /*Redes*/
 #div_redes{
@@ -1318,6 +1322,9 @@ details > summary::before {
     margin:0; 
 }
 
+#img_sys_i_1{
+    margin-left: 68%; margin-top:-28%; width: 13vw; height: 9vw;
+}
 
 /*Diseño Funcional de Programas*/
 #div_dis_fun_prog{
@@ -1490,6 +1497,10 @@ details > summary::before {
     font-size:1vw; 
     line-height: 1.7vw; 
     margin:0; 
+}
+
+#img_so_1{
+    margin-left: 71%;margin-top: -18.5%;width: 12vw;height: 11.5vw;
 }
 
 
@@ -1849,6 +1860,10 @@ details > summary::before {
 }
 
 
+#img_ing_soft_1{
+    margin-left: 68%;margin-top: -23%;width: 14vw;height: 8vw;
+}
+
 
 
 /*Bases de Datos*/
@@ -2020,6 +2035,15 @@ details > summary::before {
     margin:0; 
 }
 
+#img_teoria_comp_1{
+    margin-left: 55%;margin-top: -4%;width: 19vw;height: 10vw;
+}
+
+#img_teoria_comp_2{
+    margin-left: 10%;margin-top: -28%;width: 15vw;height: 8vw;
+}
+
+
 
 /*Comunicación Técnica en Inglés*/
 #div_com_ingles{
@@ -2131,6 +2155,9 @@ details > summary::before {
     margin:0; 
 }
 
+#img_sis_dist_1{
+    margin-left: 67%;margin-top: -12.5%;width: 13vw;height: 6.5vw; background: rgb(0, 176, 196); padding: 0.15vw;
+}
 
 /*Criptografía y Seguridad*/
 #cripto{
@@ -2247,6 +2274,10 @@ details > summary::before {
     font-size:1vw; 
     line-height: 1.7vw; 
     margin:0; 
+}
+
+#img_compila_1{
+    margin-left: 65%;margin-top: -30%;width: 16vw;height: 12vw;
 }
 
 
@@ -3752,6 +3783,59 @@ details > summary::before {
         width: 15.5vw;
         height: 8vw;
     }
+
+    
+    #img_org_comp_1{
+        margin-left: 79%; margin-top:-20%; width: 9vw; height: 9vw;
+    }
+
+    #img_sys_i_1{
+        margin-left: 68%; margin-top:-8%; width: 13vw; height: 9vw;
+    }
+
+    #img_so_1{
+        margin-left: 71%;margin-top: -18.5%;width: 12vw;height: 11.5vw;
+    }
+    
+    #img_ing_soft_1 {
+        margin-left: 54%;
+        margin-top: -10%;
+        width: 20vw;
+        height: 11vw;
+    }
+
+    #img_teoria_comp_1 {
+        margin-left: 50%;
+        margin-top: -8%;
+        width: 19vw;
+        height: 10vw;
+    }
+    
+    #img_teoria_comp_2 {
+        margin-left: 5%;
+        margin-top: -30%;
+        width: 16vw;
+        height: 9vw;
+    }
+
+    #img_sis_dist_1 {
+        margin-left: 55%;
+        margin-top: -8.5%;
+        width: 17vw;
+        height: 8.5vw;
+        background: rgb(0, 176, 196);
+        padding: 0.15vw;
+    }
+
+    #img_compila_1 {
+        margin-left: 60%;
+        margin-top: -11%;
+        width: 16vw;
+        height: 12vw;
+    }
+
+
+
 
 
 
