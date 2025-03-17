@@ -1684,6 +1684,10 @@ details > summary::before {
     margin:0; 
 }
 
+#img_apr_auto_1{
+    margin-left: 75%;margin-top: -20%;width: 12vw;height: 6vw;
+}
+
 
 /*Ingeniería de Interacción*/
 #div_ing_inter{
@@ -1921,6 +1925,17 @@ details > summary::before {
     margin:0; 
 }
 
+#img_bases_datos_1{
+    margin-left: 69%;margin-top: -18%;width: 14vw;height: 8vw;
+}
+
+#img_bases_datos_2{
+    margin-left: 60%;margin-top: -30%;width: 11vw;height: 7vw;
+}
+
+
+
+
 
 /*Inteligencia Artificial*/
 #div_intel_art{
@@ -1975,6 +1990,10 @@ details > summary::before {
     font-size:1vw; 
     line-height: 1.7vw; 
     margin:0; 
+}
+
+#img_intel_art_1{
+    margin-left: 78%;margin-top: -150%;width: 8vw;height: 6.5vw;
 }
 
 
@@ -2626,6 +2645,10 @@ details > summary::before {
     margin:0; 
 }
 
+#img_aiw_1{
+    margin-left: 64%;margin-top: -37%;width: 14vw;height: 12vw;
+}
+
 
 
 
@@ -2682,6 +2705,10 @@ details > summary::before {
     font-size:1vw; 
     line-height: 1.7vw; 
     margin:0; 
+}
+
+#img_gest_cares_1{
+    margin-left: 58%;margin-top: -37%;width: 24vw;height: 11vw;
 }
 
 
@@ -3009,6 +3036,11 @@ details > summary::before {
     font-size:1vw; 
     line-height: 1.7vw; 
     margin:0; 
+}
+
+
+#img_tnlp_1{
+    margin-left: 47%;margin-top: -32%;width: 27vw; height: 15vw;
 }
 
 
@@ -3832,6 +3864,57 @@ details > summary::before {
         margin-top: -11%;
         width: 16vw;
         height: 12vw;
+    }
+
+    
+    #img_apr_auto_1 {
+        margin-left: 70%;
+        margin-top: -13%;
+        width: 15vw;
+        height: 8vw;
+    }
+
+    #img_bases_datos_1 {
+        margin-left: 49%;
+        margin-top: -2%;
+        width: 17vw;
+        height: 11vw;
+    }
+    
+    #img_bases_datos_2 {
+        margin-left: 14%;
+        margin-top: -28%;
+        width: 17vw;
+        height: 11vw;
+    }
+
+
+    #img_intel_art_1 {
+        margin-left: 71%;
+        margin-top: -11%;
+        width: 9vw;
+        height: 7.5vw;
+    }
+
+    #img_aiw_1 {
+        margin-left: 38%;
+        margin-top: -10%;
+        width: 16vw;
+        height: 14vw;
+    }
+
+    #img_gest_cares_1 {
+        margin-left: 53%;
+        margin-top: -21%;
+        width: 25vw;
+        height: 12vw;
+    }
+
+    #img_tnlp_1 {
+        margin-left: 37%;
+        margin-top: -11%;
+        width: 31vw;
+        height: 16vw;
     }
 
 
