@@ -4180,8 +4180,233 @@ details > summary::before {
         transform: translate(-50%, -50%) scale(0.83);
     }
 
-    
+    #p_bachillerato_tareas,
+    #p_bachillerato_habs,
+    #p_upf_info_tareas,
+    #p_upf_info_habs,
+    #p_calculo_i_tareas,
+    #p_calculo_i_habs,
+    #p_mat_discreta_tareas,
+    #p_mat_discreta_habs,
+    #p_intro_prog_tareas,
+    #p_intro_prog_habs,
+    #p_intro_tic_tareas,
+    #p_intro_tic_habs,
+    #p_calculo_ii_tareas,
+    #p_calculo_ii_habs,
+    #p_alg_lineal_tareas,
+    #p_alg_lineal_habs,
+    #p_eda_i_tareas,
+    #p_eda_i_habs,
+    #p_org_comp_tareas,
+    #p_org_comp_habs,
+    #p_redes_tareas,
+    #p_redes_habs,
+    #p_met_num_tareas,
+    #p_met_num_habs,
+    #p_eda_ii_tareas,
+    #p_eda_ii_habs,
+    #p_fisica_tareas,
+    #p_fisica_habs,
+    #p_prob_tareas,
+    #p_prob_habs,
+    #p_prog_obj_tareas,
+    #p_prog_obj_habs,
+    #p_sys_i_tareas,
+    #p_sys_i_habs,
+    #p_dis_fun_prog_tareas,
+    #p_dis_fun_prog_habs,
+    #p_est_tareas,
+    #p_est_habs,
+    #p_so_tareas,
+    #p_so_habs,
+    #p_graf_ord_tareas,
+    #p_graf_ord_habs,
+    #p_dis_alg_tareas,
+    #p_dis_alg_habs,
+    #p_apr_auto_tareas,
+    #p_apr_auto_habs,
+    #p_ing_inter_tareas,
+    #p_ing_inter_habs,
+    #p_prog_paral_tareas,
+    #p_prog_paral_habs,
+    #p_ing_soft_tareas,
+    #p_ing_soft_habs,
+    #p_bases_datos_tareas,
+    #p_bases_datos_habs,
+    #p_intel_art_tareas,
+    #p_intel_art_habs,
+    #p_teoria_comp_tareas,
+    #p_teoria_comp_habs,
+    #p_com_ingles_tareas,
+    #p_com_ingles_habs,
+    #p_sis_dist_tareas,
+    #p_sis_dist_habs,
+    #p_cripto_tareas,
+    #p_cripto_habs,
+    #p_compila_tareas,
+    #p_compila_habs,
+    #p_ing_soft_web_tareas,
+    #p_ing_soft_web_habs,
+    #p_redes_in_tareas,
+    #p_redes_in_habs,
+    #p_iot_tareas,
+    #p_iot_habs,
+    #p_gest_proy_tareas,
+    #p_gest_proy_habs,
+    #p_aiw_tareas,
+    #p_aiw_habs,
+    #p_gest_cares_tareas,
+    #p_gest_cares_habs,
+    #p_videojuegos_tareas,
+    #p_videojuegos_habs,
+    #p_ent_com_virt_tareas,
+    #p_ent_com_virt_habs,
+    #p_sist_int_tareas,
+    #p_sist_int_habs,
+    #p_cybersec_tareas,
+    #p_cybersec_habs,
+    #p_tall_tec_music_tareas,
+    #p_tall_tec_music_habs,
+    #p_tnlp_tareas,
+    #p_tnlp_habs{
+        font-size: 1.1vw;
+    }
 
+    #img_calculo_i_1 {
+        margin-left: 76%;
+        margin-top: -8%;
+        width: 12vw;
+        height: 8vw;
+    }
+    
+    #img_alg_lineal_1 {
+        margin-left: 75%;
+        margin-top: -37%;
+        width: 11vw;
+        height: 10vw;
+    }
+
+    #img_fisica_1 {
+        margin-left: 78%;
+        margin-top: -9%;
+        width: 9vw;
+        height: 7vw;
+    }
+
+    #img_fisica_2 {
+        margin-left: 80%;
+        margin-top: -49%;
+        width: 7vw;
+        height: 5vw;
+    }
+
+    #img_prob_1 {
+        margin-left: 81%;
+        margin-top: -19%;
+        width: 8vw;
+        height: 7vw;
+    }
+
+    #img_est_1 {
+        margin-left: 80%;
+        margin-top: -36%;
+        width: 10vw;
+        height: 6vw;
+    }
+
+    #img_eda_i_1 {
+        margin-left: 76%;
+        margin-top: -17%;
+        width: 9vw;
+        height: 9vw;
+    }
+
+    #img_eda_ii_1 {
+        margin-left: 74%;
+        margin-top: -6%;
+        width: 11vw;
+        height: 9vw;
+    }
+
+    #img_dis_alg_1 {
+        margin-left: 69%;
+        margin-top: -46%;
+        width: 10vw;
+        height: 9vw;
+    }
+
+    #img_dis_alg_2 {
+        margin-left: 81%;
+        margin-top: -15%;
+        width: 9vw;
+        height: 5.5vw;
+    }
+
+    #img_prog_paral_1 {
+        margin-left: 70%;
+        margin-top: -15%;
+        width: 10vw;
+        height: 7vw;
+    }
+
+    #img_ing_soft_web_1 {
+        margin-left: 81%;
+        margin-top: -16%;
+        width: 9.5vw;
+        height: 5vw;
+    }
+
+    #img_org_comp_1 {
+        margin-left: 79%;
+        margin-top: -12%;
+        width: 9vw;
+        height: 9vw;
+    }
+
+    #img_sys_i_1 {
+        margin-left: 71%;
+        margin-top: -42%;
+        width: 12vw;
+        height: 8vw;
+    }
+
+    #img_so_1 {
+        margin-left: 74%;
+        margin-top: -10.5%;
+        width: 11vw;
+        height: 10.5vw;
+    }
+
+    #img_ing_soft_1 {
+        margin-left: 71%;
+        margin-top: -23%;
+        width: 14vw;
+        height: 8vw;
+    }
+
+    #img_sis_dist_1 {
+        margin-left: 71%;
+        margin-top: -11.5%;
+        width: 12vw;
+        height: 5.5vw;
+        background: rgb(0, 176, 196);
+        padding: 0.15vw;
+    }
+
+    #img_compila_1 {
+        margin-left: 65%;
+        margin-top: -39%;
+        width: 16vw;
+        height: 12vw;
+    }
+
+    #img_apr_auto_1 {
+        margin-left: 77%;
+        margin-top: -22%;
+        width: 12vw;
+        height: 6vw;
+    }
 
     #mat_discreta_title, 
     #alg_lineal_title, 
