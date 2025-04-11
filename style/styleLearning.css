@@ -4450,7 +4450,127 @@ details > summary::before {
         width: 28vw;
         height: 15vw;
     }
+
+    #img_graf_ord_1 {
+        margin-left: 77%;
+        margin-top: -26%;
+        width: 12.5vw;
+        height: 7.5vw;
+    }
+
+    #img_ing_inter_1 {
+        margin-left: 63%;
+        margin-top: -5%;
+        width: 18vw;
+        height: 8vw;
+    }
+
+    #img_videojuegos_1 {
+        margin-left: 66%;
+        margin-top: -20.6%;
+        width: 14.4vw;
+        height: 7.8vw;
+        background: rgb(209, 76, 191);
+        padding: 0.15vw;
+    }
+
+    #img_ent_com_virt_1 {
+        margin-left: 50%;
+        margin-top: -21%;
+        width: 15vw;
+        height: 7.5vw;
+        background: rgb(209, 76, 191);
+        padding: 0.15vw;
+    }
+
+    #img_ent_com_virt_2 {
+        margin-left: 88%;
+        margin-top: -28.5%;
+        width: 5vw;
+        height: 8vw;
+        background: rgb(209, 76, 191);
+        padding: 0.15vw;
+    }
     
+    #img_sist_int_1 {
+        margin-left: 3%;
+        margin-top: 1%;
+        width: 14vw;
+        height: 5vw;
+    }
+
+    #img_sist_int_2 {
+        margin-left: 42%;
+        margin-top: -15%;
+        width: 25vw;
+        height: 8vw;
+        background: rgb(209, 76, 191);
+        padding: 0.15vw;
+    }
+
+    #img_redes_1 {
+        margin-left: 75%;
+        margin-top: -32%;
+        width: 9vw;
+        height: 9vw;
+    }
+
+    #img_cripto_1 {
+        margin-left: 63%;
+        margin-top: -23%;
+        width: 14vw;
+        height: 9.5vw;
+    }
+
+    #img_redes_in_1 {
+        margin-left: 70%;
+        margin-top: -6%;
+        width: 11vw;
+        height: 7vw;
+        background: rgb(255, 52, 52);
+        padding: 0.15vw;
+    }
+
+    #img_redes_in_2 {
+        margin-left: 86%;
+        margin-top: -158%;
+        width: 5vw;
+        height: 8vw;
+        background: rgb(255, 52, 52);
+        padding: 0.15vw;
+    }
+
+    #img_iot_1 {
+        margin-left: 71%;
+        margin-top: -33%;
+        width: 12vw;
+        height: 7vw;
+        background: rgb(255, 52, 52);
+        padding: 0.15vw;
+    }
+
+    #img_iot_2 {
+        margin-left: 62%;
+        margin-top: -166%;
+        width: 16vw;
+        height: 4vw;
+        background: rgb(255, 52, 52);
+        padding: 0.15vw;
+    }
+
+    #img_cybersec_1 {
+        margin-left: 65%;
+        margin-top: -27%;
+        width: 5vw;
+        height: 6.4vw;
+    }
+
+    #img_cybersec_2 {
+        margin-left: 74%;
+        margin-top: -19%;
+        width: 12vw;
+        height: 6vw;
+    }
 
     #mat_discreta_title, 
     #alg_lineal_title, 
