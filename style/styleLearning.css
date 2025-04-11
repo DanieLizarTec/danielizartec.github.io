@@ -4408,6 +4408,50 @@ details > summary::before {
         height: 6vw;
     }
 
+    #img_bases_datos_1 {
+        margin-left: 69%;
+        margin-top: -7%;
+        width: 14vw;
+        height: 8vw;
+    }
+
+    
+    #img_bases_datos_2 {
+        margin-left: 67%;
+        margin-top: -57%;
+        width: 11vw;
+        height: 7vw;
+    }
+
+    #img_intel_art_1 {
+        margin-left: 73%;
+        margin-top: -6%;
+        width: 8vw;
+        height: 6.5vw;
+    }
+
+    #img_aiw_1 {
+        margin-left: 65%;
+        margin-top: -31%;
+        width: 14vw;
+        height: 12vw;
+    }
+
+    #img_gest_cares_1 {
+        margin-left: 55%;
+        margin-top: -26%;
+        width: 24vw;
+        height: 11vw;
+    }
+
+    #img_tnlp_1 {
+        margin-left: 47%;
+        margin-top: -32%;
+        width: 28vw;
+        height: 15vw;
+    }
+    
+
     #mat_discreta_title, 
     #alg_lineal_title, 
     #met_num_title, 
