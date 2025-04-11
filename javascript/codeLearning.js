@@ -153,13 +153,23 @@ if (button_learning) {
     });
 }
 
+const container = document.querySelector("#bar_menu_info");
+
 document.querySelectorAll("details").forEach((details) => {
     details.addEventListener("toggle", function () {
         if (this.open) {
-            this.scrollIntoView({ behavior: "smooth", inline: "end", block: "nearest" });
+            // Hace scroll del propio <details> en vertical si hace falta
+            this.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
+
+            // Hace scroll del contenedor hacia la derecha para mostrar el nuevo contenido
+            container.scrollTo({
+                left: container.scrollWidth,
+                behavior: "smooth"
+            });
         }
     });
 });
+
 
 
 
