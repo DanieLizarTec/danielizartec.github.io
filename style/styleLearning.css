@@ -221,7 +221,8 @@ details > ul {
 }
 
 details ul li {
-    font-size:1.1vw;
+    font-size:3.1vw;
+    margin-left: -4vw;
     padding-top:3%;
 }
 
