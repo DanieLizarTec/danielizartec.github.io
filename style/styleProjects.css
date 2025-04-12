@@ -1342,12 +1342,14 @@ details > summary::before {
         .maquinas_cyber {
             position: absolute;
             margin-top:0%;
+            margin-left: 0%;
             display: none;
             background-color: #e2fdfd;
             width: 43.15vw;
             height:90vw;
             z-index: 1;
         }
+
 
         #button_download_pdf{
             
