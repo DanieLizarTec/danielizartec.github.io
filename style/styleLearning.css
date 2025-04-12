@@ -3733,7 +3733,7 @@ details > summary::before {
     }
 
     #iot_contrato_title{
-        font-size: 1vw;
+        font-size: 1.5vw;
         margin-bottom: 1%;
     }
 
@@ -4741,6 +4741,105 @@ details > summary::before {
         background-color: rgba(0, 0, 0, 0.4);
         border-radius: 4px;
     }
+
+    details > summary {
+        display: block;
+        cursor: pointer;
+        color: blue;
+        padding-top:5%;
+        border-left: 0.3vw solid #000;
+        font-size:1.8vw;
+        padding-left: 1vw;
+        height:1%;
+        font-style: italic;
+        font-weight: bold ;
+        
+    }
+
+    details ul li {
+        font-size:1.4vw;
+        padding-top:3%;
+    }
+
+    #asignaturas_folder{
+        width:16vw; 
+        font-size:1.7vw;
+    }
+    
+    #mat_folder{
+        width:10vw;  
+        color: rgb(42, 88, 244); 
+        font-size:1.6vw;
+    }
+    
+    #prog_folder{
+        color: rgb(193, 187, 12); 
+        font-size:1.6vw;
+    }
+    
+    #sist_folder{
+        color: rgb(0, 147, 196); 
+         font-size:1.6vw;
+    
+    }
+    
+    #datos_folder{
+    
+        color: rgb(55, 170, 1); 
+         font-size:1.6vw;
+    }
+    
+    #inter_folder{
+        color: rgb(209, 76, 191); 
+         font-size:1.6vw;
+    
+    }
+    
+    #redes_folder{
+        color: rgb(223, 47, 47); 
+         font-size:1.6vw;
+    
+    }
+    
+    #etic_folder{
+        color: rgb(110, 31, 200); 
+         font-size:1.6vw;
+    
+    }
+
+    #bachillerato{
+        font-size: 1.4vw;
+    }
+
+    #upf_info{
+        font-size:1.4vw;
+    
+    }
+
+    #google_cybersecurity{
+        font-size:1.4vw;
+    }
+
+    #apr_auto{
+        font-size: 1.4vw;
+    }
+
+    #prog_paral{
+        font-size: 1.4vw;
+    }
+
+    
+    #cripto{
+        font-size: 1.4vw;
+    }
+
+    #ing_soft_web{
+        font-size: 1.4vw;
+    }
+    
+
+
+    
 
     
 }
