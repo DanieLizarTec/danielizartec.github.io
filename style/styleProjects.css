@@ -1578,7 +1578,7 @@ details > summary::before {
     #div_iot::-webkit-scrollbar, 
     #div_dockerlabs::-webkit-scrollbar,
     #bar_menu_info::-webkit-scrollbar {
-        width: 30px;
+        width: 10px;
         background-color: rgba(0, 0, 0, 0.1);
     }
 
