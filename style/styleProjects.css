@@ -1466,6 +1466,18 @@ details > summary::before {
         font-size: 2.25vw;
     }
 
+    #bar_dockerlabs{
+        color: rgb(223, 47, 47);
+        width:14.5vw; 
+        font-size: 2.25vw;
+    }
+
+    #dockerlabs{
+        font-size: 2.2vw; 
+        font-weight:bold; 
+        cursor: pointer;
+    }
+
     #dockerlabs_title{
         margin-bottom: 1%;
     }
