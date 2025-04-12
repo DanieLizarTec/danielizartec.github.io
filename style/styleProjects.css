@@ -225,7 +225,7 @@ details > summary {
     color: blue;
     padding-top:5%;
     border-left: 0.3vw solid #000;
-    font-size:1.5vw;
+    font-size:2.15vw;
     padding-left: 1vw;
     height:1%;
     font-style: italic;
@@ -987,6 +987,18 @@ details > summary::before {
 
 /*Máquinas Ciberseguridad*/
 
+#bar_dockerlabs{
+    color: rgb(223, 47, 47)
+    ; width:14.5vw; 
+    font-size: 2.2vw;
+}
+
+#dockerlabs{
+    font-size: 2.15vw; 
+    font-weight:bold; 
+    cursor: pointer;
+}
+
 #div_dockerlabs{
     position: absolute;
     margin-top:0%;
@@ -1037,6 +1049,16 @@ details > summary::before {
     font-size:1vw; 
     line-height: 1.7vw; 
     margin:0; 
+}
+
+#dockerlabs_muyfacil{
+    font-size: 2.5vw; 
+    font-weight:bold;
+}
+
+#dockerlabs_facil{
+    font-size: 2.5vw; 
+    font-weight:bold;
 }
 
 
@@ -1240,7 +1262,7 @@ details > summary::before {
         #div_dockerlabs::-webkit-scrollbar,
         #bar_menu_info::-webkit-scrollbar {
             width: 4px;
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 0, 0, 0.1);
         }
 
         #div_ent_com_virt::-webkit-scrollbar-thumb, 
@@ -1556,7 +1578,7 @@ details > summary::before {
     #div_iot::-webkit-scrollbar, 
     #div_dockerlabs::-webkit-scrollbar,
     #bar_menu_info::-webkit-scrollbar {
-        width: 4px;
+        width: 30px;
         background-color: rgba(0, 0, 0, 0.1);
     }
 
@@ -1606,24 +1628,51 @@ details > summary::before {
         margin-left: 4%;
     }
 
-/* 
-    #ing_soft_web_title {
-        font-size: 2.2vw;
-        height: 3vw;
+    details > summary {
+        display: block;
+        cursor: pointer;
+        color: blue;
+        padding-top:5%;
+        border-left: 0.3vw solid #000;
+        font-size:1.8vw;
+        padding-left: 1vw;
+        height:1%;
+        font-style: italic;
+        font-weight: bold ;
+        
     }
 
-    #p_ing_soft_web_tareas {
-        font-size: 1.1vw;
+    #bar_dockerlabs{
+        color: rgb(223, 47, 47);
+        width:14.5vw; 
+        font-size: 1.7vw;
     }
 
-    #redes_in_title{
-        font-size: 1.9vw;
+    #dockerlabs{
+        font-size: 1.6vw; 
+        font-weight:bold; 
+        cursor: pointer;
     }
 
-    #p_redes_in_tareas {
-        padding:0%;
-        font-size: 1.1vw;
-    } */
+    details ul li {
+        font-size:1.5vw;
+        padding-top:3%;
+    }
+
+    #dockerlabs_muyfacil{
+        font-size: 2vw; 
+        font-weight:bold;
+    }
+    
+    #dockerlabs_facil{
+        font-size: 2vw; 
+        font-weight:bold;
+    }
+
+
+    
+
+    
 }
 
 
