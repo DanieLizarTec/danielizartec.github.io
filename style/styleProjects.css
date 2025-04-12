@@ -225,7 +225,7 @@ details > summary {
     color: blue;
     padding-top:5%;
     border-left: 0.3vw solid #000;
-    font-size:2.15vw;
+    font-size:1.8vw;
     padding-left: 1vw;
     height:1%;
     font-style: italic;
@@ -246,7 +246,7 @@ details > ul {
 }
 
 details ul li {
-    font-size:1.2vw;
+    font-size:1.5vw;
     padding-top:3%;
 }
 
@@ -355,7 +355,7 @@ details > summary::before {
 
 /* Ingeniería de Software para Aplicaciones Web*/
 #ing_soft_web{
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 
@@ -988,13 +988,13 @@ details > summary::before {
 /*Máquinas Ciberseguridad*/
 
 #bar_dockerlabs{
-    color: rgb(223, 47, 47)
-    ; width:14.5vw; 
-    font-size: 2.2vw;
+    color: rgb(223, 47, 47); 
+    width:14.5vw; 
+    font-size: 1.7vw;
 }
 
 #dockerlabs{
-    font-size: 2.15vw; 
+    font-size: 1.6vw; 
     font-weight:bold; 
     cursor: pointer;
 }
@@ -1052,12 +1052,12 @@ details > summary::before {
 }
 
 #dockerlabs_muyfacil{
-    font-size: 2.5vw; 
+    font-size: 2vw; 
     font-weight:bold;
 }
 
 #dockerlabs_facil{
-    font-size: 2.5vw; 
+    font-size: 2vw; 
     font-weight:bold;
 }
 
@@ -1090,6 +1090,7 @@ details > summary::before {
 .maquinas_cyber {
     position: absolute;
     margin-top:0%;
+    margin-left:-29%;
     display: none;
     background-color: #e2fdfd;
     width: 44.15vw;
@@ -1191,6 +1192,7 @@ details > summary::before {
             margin-top:0%;
         
         }
+
 
         #p_ing_soft_web_tareas{
             font-size:2.2vw;
@@ -1497,6 +1499,15 @@ details > summary::before {
         transform: translate(-50%, -50%) scale(0.83);
     }
 
+    #div_content{
+        background-color: #e2fdfd;
+        margin-left:30%;
+        width: 70%;
+        height: 100%;
+        margin-top:-61%;
+    
+    }
+
     #searchInput{
         width: 80%;
         margin-left: -45%;
@@ -1668,6 +1679,8 @@ details > summary::before {
         font-size: 2vw; 
         font-weight:bold;
     }
+
+    
 
 
     
