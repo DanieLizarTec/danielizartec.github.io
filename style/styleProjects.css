@@ -1,0 +1,1762 @@
+/* CSS  By Daniel Lizarte Cáceres */
+
+/* General Structure */
+body, html {
+    height: 100%;
+    margin: 0;
+    
+}
+
+h1{
+    color:yellow;
+}
+
+/* Body projects */
+body#initprojects {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:url("../resources/wallpaper_tech.png"),  linear-gradient(to top,#0a1b2a 15%, #0f2e46 40%,#1e3f66 60%, #3a5d7e 80%,#58a7c7 100% );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden; 
+    
+}
+
+div#container_window_info{
+    display: block;
+    width: 65vw; 
+    height: 65vw; 
+    background-image: url("../resources/window_info.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index:1;
+
+}
+
+
+/* Icons Desktop Row 4 */
+#iconContainer4 {
+    display: flex;
+    
+}
+
+/* Search Bar */
+
+#barSearch {
+    width: 25vw;
+    height: 2.3vw;
+    font-size: 1.1vw;
+    font-style: italic;
+    color: black;
+    margin-top: -4.6%;
+    margin-left: 15%;
+    display: none;
+}
+
+#searchInput {
+    width: 20vw;
+    height: 2.3vw;
+    border: 0.2vw solid black;
+    background-image: url(../resources/projects.png);
+    background-repeat: no-repeat;
+    background-size: 1.7vw;
+    background-position: 0.5vw center;
+    padding-left: 3.8vw;
+    margin-left: -45%;
+}
+
+
+#icon_file_search {
+    width: 4em;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    margin-right:99%;
+    margin-left:2100em;
+}
+
+
+
+#container_bar_projects {
+    display: flex;
+    align-items: flex-start; 
+    width: 80vw; 
+    height: 4vw; 
+    
+    margin-top:15.8%;
+}
+
+#title_projects {
+    width: 27vw; 
+    height: 2vw;
+    font-size: 2vw; 
+    font-style: italic;
+    color: white;
+    margin-top: 0.8%;
+    margin-left:5%
+}
+
+#button_exit_pdf{
+    width: 8vw;
+    height: 2.5vw;
+    font-size: 1.2vw;
+    font-style: italic;
+    color: rgb(251, 67, 67);
+    margin-top: 0.8%;
+    margin-left: -5%;
+    visibility: hidden;
+    border: 0.2vw solid black;
+    padding: 0.1vw;
+}
+
+#button_back {
+    width: 7vw;
+    height: 2.5vw;
+    font-size: 1.5vw;
+    font-style: italic;
+    color: black;
+    margin-top: 0.8%;
+    margin-left: -19%;
+    display: none;
+    border: 0.2vw solid black;
+    padding: 0.1vw;
+
+    background-color: #e8e8e8;  
+    font-weight: bold; 
+    font-family: 'MS Sans Serif', Tahoma, sans-serif;
+}
+
+
+
+#info_content_container_1 {
+    
+    width: 62.8vw;
+    height: 38.3vw;
+    margin-left: 1.6%;
+    margin-right: 2%;
+    overflow-y: none; 
+    background-color:rgb(255, 255, 255);
+    margin-top:1.66%;
+    z-index:2;
+     
+}
+
+.text_info_content{
+    color:black;
+    font-size:2vw;
+
+}
+
+#init_text_projects{
+
+    text-align: center; 
+    font-size:5vw; 
+    margin:0;
+}
+
+#img_projects_web{
+    width: 10vw; 
+    height: 10vw;
+}
+
+#mas_info{
+    text-align: center; 
+    font-size:1.5vw; 
+    margin:0; 
+    color: rgb(72, 226, 1); 
+    font-style: italic;
+}
+
+#div_info_github{
+    margin-top:-15%;
+}
+
+#info_github{
+
+    text-align: center; 
+    font-size:2vw; 
+    margin:0; 
+    color: blue; 
+    font-style: italic;
+}
+
+
+
+#bar_menu_info{
+    display:block;
+    height:100%;
+    width:30%;
+    background-color: #c7ffff;
+    overflow-y: scroll;
+    scrollbar-color: rgba(150, 150, 150, 0.551)  #a2fafa; 
+   
+
+}
+
+#bar_menu_explorer{
+    height: 0.1vw;
+    margin-left:5%;
+    font-family:'Gill Sans' ;
+    
+}
+
+
+details {
+    
+   
+    padding-left: 0.1vw;
+    margin-bottom: 0.5em;
+    font-size:2vw;
+
+}
+
+details > summary {
+    display: block;
+    cursor: pointer;
+    color: blue;
+    padding-top:5%;
+    border-left: 0.3vw solid #000;
+    font-size:1.8vw;
+    padding-left: 1vw;
+    height:1%;
+    font-style: italic;
+    font-weight: bold ;
+    
+}
+
+details > ul {
+    display:block;
+    margin-left: 0.7vw;
+    padding-left: 0.25vw;
+    padding-top: 0.5vw;
+    list-style-type: none;
+    font-size: 1.25vw;
+    padding-right: 1.67vw;
+    
+    
+}
+
+details ul li {
+    font-size:1.5vw;
+    padding-top:3%;
+}
+
+details ul li span{
+    cursor: pointer;
+}
+
+
+details > ul > li::before {
+    content: '📄 ';
+}
+
+details[open] > ul > li::before {
+    content: '📄 ';
+}
+
+details > summary::before {
+    content: '📁 ';
+}
+
+
+#div_content{
+    background-color: #e2fdfd;
+    margin-left:30%;
+    width: 70%;
+    height: 100%;
+    margin-top:-61%;
+
+}
+
+#init_projects {
+    position: absolute;
+    margin-left: 17%;
+    margin-top: 11%;
+    z-index: 1;
+}
+
+
+#title_projects_area{
+    text-align: center; 
+    font-size:5vw; 
+    margin-left:10%;
+    font-family: 'Times New Roman', Times, serif;
+    color:#b2ba42;
+    font-weight: bolder;
+}
+
+
+
+/*Subject Projects*/
+
+/*Inteligencia Artificial*/
+#div_intel_art{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+
+
+#intel_art_title{
+    font-size:2.8vw; 
+    color: rgb(55, 170, 1);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin:0; 
+    width: 60vw;
+   
+}
+
+#intel_art_contrato_title{
+    font-size:1.5vw; 
+    color: rgb(129, 189, 107); 
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    padding-right:2%; 
+    height: 5%; 
+    margin:0; 
+    text-align: right;
+
+}
+
+#p_intel_art_tareas{
+    padding-top:1%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_intel_art_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+/* Ingeniería de Software para Aplicaciones Web*/
+#ing_soft_web{
+    font-size: 1.5vw;
+}
+
+
+#div_ing_soft_web{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+
+
+#ing_soft_web_title{
+    font-size:2.6vw; 
+    color: rgb(220, 213, 12);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin:0; 
+    height:7vw;
+    width: 60vw;
+   
+}
+
+#ing_soft_web_contrato_title{
+    font-size:1.5vw; 
+    color: rgb(129, 189, 107); 
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    padding-right:2%; 
+    height: 5%; 
+    margin:0; 
+    text-align: right;
+
+}
+
+#p_ing_soft_web_tareas{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_ing_soft_web_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+
+/*Redes de Sensores Inalámbricos*/
+#div_redes_in{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+
+
+#redes_in_title{
+    font-size:3vw; 
+    color: rgb(255, 52, 52);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin:0; 
+    width: 60vw;
+   
+}
+
+#redes_in_contrato_title{
+    font-size:1.5vw; 
+    color: rgb(129, 189, 107); 
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    padding-right:2%; 
+    height: 5%; 
+    margin:0; 
+    text-align: right;
+
+}
+
+#p_redes_in_tareas{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_redes_in_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+/*Internet of Things*/
+#div_iot{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+
+
+#iot_title{
+    font-size:3vw; 
+    color: rgb(255, 52, 52);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin-left:20%;
+    width: 60vw;
+   
+}
+
+#iot_contrato_title{
+    font-size:1.5vw; 
+    color: #dbb039;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    padding-right:2%; 
+    height: 5%; 
+    margin:0; 
+    text-align: right;
+
+}
+
+#p_iot_tareas{
+    padding-top:1.25%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_iot_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+
+
+/*Gestión de Proyectos*/
+#div_gest_proy{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+#gest_proy_title{
+    font-size:3vw; 
+    color: rgb(110, 31, 200);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin:0; 
+    width: 60vw;
+   
+}
+
+#gest_proy_contrato_title{
+    font-size:1.5vw; 
+    color: rgb(129, 189, 107); 
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    padding-right:2%; 
+    height: 5%; 
+    margin:0; 
+    text-align: right;
+
+}
+
+#p_gest_proy_tareas{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_gest_proy_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+
+
+/*Aplicaciones Inteligentes para la Web*/
+#div_aiw{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+
+
+#aiw_title{
+    font-size:2.7vw; 
+    color: rgb(55, 170, 1);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin:0; 
+    width: 60vw;
+   
+}
+
+#aiw_contrato_title{
+    font-size:1.5vw; 
+    color: rgb(129, 189, 107); 
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    padding-right:2%; 
+    height: 5%; 
+    margin:0; 
+    text-align: right;
+
+}
+
+#p_aiw_tareas{
+    padding-top:1%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_aiw_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+
+
+
+/*Análisis de Gestos y Caras*/
+#div_gest_cares{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+
+
+#gest_cares_title{
+    font-size:2.7vw; 
+    color: rgb(55, 170, 1);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin:0; 
+    width: 60vw;
+   
+}
+
+#gest_cares_contrato_title{
+    font-size:1.5vw; 
+    color: rgb(129, 189, 107); 
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    padding-right:2%; 
+    height: 5%; 
+    margin:0; 
+    text-align: right;
+
+}
+
+#p_gest_cares_tareas{
+    padding-top:1%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_gest_cares_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+
+/*Entornos de Comunicación Virtual*/
+#div_ent_com_virt{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+#ent_com_virt_title{
+    font-size:3vw; 
+    color: rgb(209, 76, 191);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin:0; 
+    width: 45vw;
+    margin-left:15%;
+}
+
+#ent_com_virt_contrato_title{
+    font-size:1.5vw; 
+    color: #dbb039;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    height: 5%; 
+    margin:0; 
+    text-align: center;
+
+}
+
+#p_ent_com_virt_tareas{
+    padding-top:1%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_ent_com_virt_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+
+/*Sistemas Interactivos*/
+#div_sist_int{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+#sist_int_title{
+    font-size:3vw; 
+    color: rgb(209, 76, 191);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin:0; 
+    width: 45vw;
+    margin-left:1%;
+}
+
+#sist_int_contrato_title{
+    font-size:1.5vw; 
+    color: #dbb039;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    height: 5%; 
+    margin:0; 
+    text-align: center;
+
+}
+
+#p_sist_int_tareas{
+    padding-top:1%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_sist_int_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+
+
+/*Seguridad en Computadores*/
+#div_cybersec{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+
+
+#cybersec_title{
+    font-size:3vw; 
+    color: rgb(255, 52, 52);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    width: 60vw;
+   
+}
+
+#cybersec_contrato_title{
+    font-size:1.5vw; 
+    color: #dbb039;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    padding-right:2%; 
+    height: 5%; 
+    margin:0; 
+    text-align: right;
+
+}
+
+#p_cybersec_tareas{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_cybersec_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+
+/*Taller de Tecnología Musical*/
+#div_tall_tec_music{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+#tall_tec_music_title{
+    font-size:3vw; 
+    color: rgb(110, 31, 200);;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin:0; 
+    width: 60vw;
+   
+}
+
+#tall_tec_music_contrato_title{
+    font-size:1.5vw; 
+    color: rgb(129, 189, 107); 
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    padding-right:2%; 
+    height: 5%; 
+    margin:0; 
+    text-align: right;
+
+}
+
+#p_tall_tec_music_tareas{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_tall_tec_music_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+
+/*Certificaciones*/
+#div_google_cybersecurity {
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+#div_google_cybersecurity::after {
+    content: "";
+    background: url("../resources/google_cyber_i.png");
+    opacity: 10; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+#google_cybersecurity_title{
+    font-size:3.5vw; 
+    color: #00cccc;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin-top:0%; 
+    
+    width: 45vw;
+    margin-left:3%;
+}
+
+#google_cybersecurity_contrato_title{
+    font-size:1.25vw; 
+    color: #dbb039;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    
+    margin-right:1.5%;
+    margin-top:0.5%; 
+    height: 5%; 
+    
+    text-align: center;
+
+}
+
+#p_google_cybersecurity_tareas{
+    
+    padding-top:1%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    margin:0;
+    
+}
+
+#p_google_cybersecurity_habs{
+
+    padding-top:1%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+
+
+/*Máquinas Ciberseguridad*/
+
+#bar_dockerlabs{
+    color: rgb(223, 47, 47); 
+    width:14.5vw; 
+    font-size: 1.7vw;
+}
+
+#dockerlabs{
+    font-size: 1.6vw; 
+    font-weight:bold; 
+    cursor: pointer;
+}
+
+#div_dockerlabs{
+    position: absolute;
+    margin-top:0%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+
+
+#dockerlabs_title{
+    font-size:3vw; 
+    color: rgb(255, 52, 52);
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif; 
+    width: 60vw;
+   
+}
+
+#dockerlabs_contrato_title{
+    font-size:1.5vw; 
+    color: #dbb039;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;  
+    padding-right:2%; 
+    margin:0; 
+    text-align: right;
+
+}
+
+#p_dockerlabs_tareas{
+    padding-top:0%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1.1vw; 
+    margin:0;
+    
+}
+
+#p_dockerlabs_habs{
+    padding-top:2%; 
+    padding-left:2%; 
+    padding-right:2%; 
+    text-align: justify; 
+    font-size:1vw; 
+    line-height: 1.7vw; 
+    margin:0; 
+}
+
+#dockerlabs_muyfacil{
+    font-size: 2vw; 
+    font-weight:bold;
+}
+
+#dockerlabs_facil{
+    font-size: 2vw; 
+    font-weight:bold;
+}
+
+
+#img_dockerlabs{
+    display: inline-block; 
+    margin-left: 45%; 
+    margin-top: -15%; 
+    width: 6.5vw; 
+    height: 6.5vw; 
+    border-radius: 50%; 
+    overflow: hidden;
+
+}
+
+
+#img_mario{
+    display: block; 
+    margin-left: 73%; 
+    margin-top: -17.7%;
+    width: 7vw; 
+    height: 7vw; 
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+
+
+
+.maquinas_cyber {
+    position: absolute;
+    margin-top:0%;
+    margin-left:-29%;
+    display: none;
+    background-color: #e2fdfd;
+    width: 44.15vw;
+    height:38.3vw;
+    z-index: 1;
+}
+
+.maquinas_cyber::after {
+    content: "";
+    opacity: 10; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+
+
+/* For Vertical Mobile/Tablet */
+@media only screen and (max-width: 900px) and (max-height: 900px) and (orientation: portrait), 
+       only screen and (max-width: 900px) and  (orientation: portrait) {
+
+
+        div#container_window_info{
+            display: block;
+            width: 65vw; 
+            height: 95vw; 
+            font-size:2.15vw;
+            background-image: url("../resources/window_info_mobile.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%) scale(1.5); 
+            overflow: hidden;
+            z-index:1;
+        
+        }
+    
+        #container_bar_projects{
+            margin-top:-0.3%;
+            font-size:2.15vw;
+           
+        }
+    
+    
+        #info_content_container_1 {
+    
+            display:flex;
+            width: 61.8vw;
+            height: 90vw;
+            margin-left: 2.25%;
+            margin-right: 2%;
+            overflow-y:scroll; 
+            background: url("");
+            background-color:#dbf6fe;
+            margin-top:0.7%;
+            z-index:2;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-size:2.15vw;
+            overflow: hidden; 
+            
+             
+        }
+    
+        #button_back {
+            width: 10vw;
+            height: 4.2vw;
+            font-size: 2.15vw;
+            font-style: italic;
+            color: black;
+            margin-top: 0.2%;
+            margin-left: -22.3%;
+            padding: 0%;
+            display: none;
+            border: 0.3vw solid rgb(0, 128, 105);
+        }
+
+        #searchInput {
+            width: 80%;
+            height: 7.5px;
+            margin-left: 0%;
+            margin-top:-6%;
+        }
+
+        #div_content{
+            background-color: #e2fdfd;
+            margin-left:0%;
+            width: 70%;
+            height: 100%;
+            margin-top:0%;
+        
+        }
+
+
+        #p_ing_soft_web_tareas{
+            font-size:2.2vw;
+        }
+
+        #title_projects_area{
+            margin-left:-20%;
+            margin-top:40%;
+        }
+
+        #init_text_projects{
+            font-size:6vw;
+        }
+
+        #img_projects_web{
+            width: 15vw; 
+            height: 15vw;
+        
+        }
+
+        #mas_info{
+            font-size:3vw;
+        }
+
+        #div_info_github{
+            margin-top:0%;
+        }
+
+        #info_github{
+            margin-top:-30%;
+            font-size:3vw;
+        }
+
+        ::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+
+        #div_ent_com_virt,  #div_tall_tec_music, 
+        #div_sist_int, #div_gest_cares, 
+        #div_cybersec, #div_aiw, #div_redes_in, 
+        #div_ing_soft_web, #div_gest_proy, 
+        #div_intel_art, #div_iot, #div_dockerlabs{
+            height: 95%;
+            overflow-y: scroll;
+            font-size:2.2vw;  
+            -webkit-overflow-scrolling: touch; 
+        } 
+
+        #bar_menu_info{
+
+            overflow-y:scroll;
+            font-size:2.2vw;  
+            -webkit-overflow-scrolling: touch; 
+            overflow-x:hidden;
+
+        }
+        
+        #div_ent_com_virt::-webkit-scrollbar, 
+        #div_tall_tec_music::-webkit-scrollbar, 
+        #div_sist_int::-webkit-scrollbar, 
+        #div_gest_cares::-webkit-scrollbar, 
+        #div_cybersec::-webkit-scrollbar, 
+        #div_aiw::-webkit-scrollbar, 
+        #div_redes_in::-webkit-scrollbar, 
+        #div_ing_soft_web::-webkit-scrollbar, 
+        #div_gest_proy::-webkit-scrollbar, 
+        #div_intel_art::-webkit-scrollbar, 
+        #div_iot::-webkit-scrollbar, 
+        #div_dockerlabs::-webkit-scrollbar,
+        #bar_menu_info::-webkit-scrollbar {
+            width: 4px;
+            background-color: rgba(255, 0, 0, 0.1);
+        }
+
+        #div_ent_com_virt::-webkit-scrollbar-thumb, 
+        #div_tall_tec_music::-webkit-scrollbar-thumb, 
+        #div_sist_int::-webkit-scrollbar-thumb, 
+        #div_gest_cares::-webkit-scrollbar-thumb, 
+        #div_cybersec::-webkit-scrollbar-thumb, 
+        #div_aiw::-webkit-scrollbar-thumb, 
+        #div_redes_in::-webkit-scrollbar-thumb, 
+        #div_ing_soft_web::-webkit-scrollbar-thumb, 
+        #div_gest_proy::-webkit-scrollbar-thumb, 
+        #div_intel_art::-webkit-scrollbar-thumb, 
+        #div_iot::-webkit-scrollbar-thumb, 
+        #div_dockerlabs::-webkit-scrollbar-thumb,
+        #bar_menu_info::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.4); 
+            border-radius: 4px;
+        }
+
+
+        #p_intel_art_tareas,
+        #p_ing_soft_web_tareas,
+        #p_redes_in_tareas,
+        #p_iot_tareas,
+        #p_gest_proy_tareas,
+        #p_aiw_tareas,
+        #p_gest_cares_tareas,
+        #p_ent_com_virt_tareas,
+        #p_sist_int_tareas,
+        #p_cybersec_tareas,
+        #p_tall_tec_music_tareas,
+        #p_google_cybersecurity_tareas,
+        #p_dockerlabs_tareas,
+        #p_ing_soft_web_tareas,
+        #p_dockerlabs_tareas{
+            font-size:2.2vw;
+        }
+
+
+
+        
+        #redes_in_title,
+        #gest_proy_title,
+        #iot_title,
+        #aiw_title,
+        #ent_com_virt_title,
+        #cybersec_title{
+            width:200vw;
+            font-size:2.5vw;
+        }
+        
+        #ing_soft_web {
+            font-size: 2.2vw;
+        }
+
+        #iot_contrato_title{
+            font-size:2.2vw;
+            margin-right:2.5%;
+        }
+
+        #ent_com_virt_contrato_title{
+            font-size:2.2vw;
+            margin-right:2.5%;
+        }
+
+        #cybersec_title{
+            margin:1%;
+        }
+
+        details ul li {
+            font-size:2.2vw;
+            padding-top:3%;
+        }
+
+        .maquinas_cyber {
+            position: absolute;
+            margin-top:0%;
+            margin-left: 0%;
+            display: none;
+            background-color: #e2fdfd;
+            width: 43.15vw;
+            height:90vw;
+            z-index: 1;
+        }
+
+
+        #button_download_pdf{
+            
+            font-size: 2.5vw;
+            font-style: italic;
+            padding: 1vw;
+            background-color: #69b4b4;
+            border-radius: 5%;
+            border: 0.1vw solid black;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 82.5%;
+        }
+
+        
+
+        
+        
+        
+
+}
+
+/* For Vertical Tablet */
+@media only screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
+    #searchInput {
+        width: 80%;
+        height: 2vw;
+        margin-left: -45%;
+    }
+}
+
+/* For Vertical Mobile */
+@media only screen and (max-width: 500px) and (orientation: portrait){
+
+    details > summary {
+        display: block;
+        cursor: pointer;
+        color: blue;
+        padding-top:5%;
+        border-left: 0.3vw solid #000;
+        font-size:2.3vw;
+        padding-left: 1vw;
+        height:1%;
+        font-style: italic;
+        font-weight: bold ;
+        
+    }
+
+    #title_projects{
+        font-size:2.15vw;
+        margin-top:1.5%;
+    }
+    
+    #bar_menu_info{
+        font-size:2.15vw;
+        overflow-y: scroll;
+        scrollbar-color: rgba(150, 150, 150, 0.551)  #a2fafa; 
+
+    }
+
+    #searchInput {
+        width: 80%;
+        height: 8px;
+        margin-left: -65%;
+        margin-top: 2%;
+        font-size:2.2vw;
+    }
+
+    #ing_soft_web,
+    #redes_in,
+    #gest_proy,
+    #iot,
+    #aiw,
+    #intel_art,
+    #ent_com_virt,
+    #gest_cares,
+    #cybersec,
+    #sist_int,
+    #tall_tec_music {
+        font-size: 2.15vw;
+    }
+    
+    
+
+    #redes_in_title,
+    #gest_proy_title,
+    #iot_title,
+    #aiw_title,
+    #ent_com_virt_title,
+    #cybersec_title{
+            width:200vw;
+            font-size:2.5vw;
+    }
+
+    #iot_title{
+        margin:1%;
+    }
+
+    #iot_contrato_title{
+        font-size:2.2vw;
+        margin-right:2.5%;
+    }
+
+    #ent_com_virt_contrato_title{
+        font-size:2.2vw;
+        margin-right:2.5%;
+    }
+
+    #cybersec_title{
+        margin:1%;
+    }
+
+    #aiw_title{
+        font-size: 2.25vw;
+    }
+
+    #bar_dockerlabs{
+        color: rgb(223, 47, 47);
+        width:14.5vw; 
+        font-size: 2.25vw;
+    }
+
+    #dockerlabs{
+        font-size: 2.2vw; 
+        font-weight:bold; 
+        cursor: pointer;
+    }
+
+    #dockerlabs_title{
+        margin-bottom: 1%;
+    }
+
+    #p_dockerlabs_tareas {
+
+       font-size:2.2vw;
+    }
+
+    #p_dockerlabs_habs {
+        font-size:2.2vw;
+        line-height: 3.7vw;
+        padding-bottom: 3vw;
+    }
+    
+
+    #img_dockerlabs {
+        display: inline-block;
+        margin-left: 22%;
+        margin-top: 2%;
+        width: 8.5vw;
+        height: 8.5vw;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    
+    #img_mario {
+        display: block;
+        margin-left: 59%;
+        margin-top: -24.7%;
+        width: 9vw;
+        height: 9vw;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+}
+
+
+/*For Horizontal Mobile*/
+@media only screen and (min-width: 600px) and (max-width: 950px) and (orientation: landscape) {
+    
+    div#container_window_info{
+        transform: translate(-50%, -50%) scale(0.83);
+    }
+
+    #div_content{
+        background-color: #e2fdfd;
+        margin-left:30%;
+        width: 70%;
+        height: 100%;
+        margin-top:-61%;
+    
+    }
+
+    #searchInput{
+        width: 80%;
+        margin-left: -45%;
+        height:16.7px;
+    }
+
+    #redes_in_title,
+    #gest_proy_title,
+    #iot_title,
+    #aiw_title,
+    #ent_com_virt_title,
+    #cybersec_title{
+            width:200vw;
+            font-size:2.5vw;
+    }
+
+
+    #iot_title{
+        margin:1%;
+    }
+
+    #iot_contrato_title{
+        font-size:1.25vw;
+        
+    }
+
+    #cybersec_title{
+        margin:1%;
+    }
+
+    #aiw_title{
+        font-size: 2.25vw;
+    }
+
+    #ing_soft_web,
+    #redes_in,
+    #gest_proy,
+    #iot,
+    #aiw,
+    #intel_art,
+    #ent_com_virt,
+    #gest_cares,
+    #cybersec,
+    #sist_int,
+    #tall_tec_music {
+        font-size: 1.5vw;
+    }
+
+    #div_ent_com_virt,  #div_tall_tec_music, 
+    #div_sist_int, #div_gest_cares, 
+    #div_cybersec, #div_aiw, #div_redes_in, 
+    #div_ing_soft_web, #div_gest_proy, 
+    #div_intel_art, #div_iot, #div_dockerlabs{
+        height: 59%;
+        overflow-y: scroll;
+        font-size:2.2vw;  
+        -webkit-overflow-scrolling: touch; 
+    } 
+
+    #bar_menu_info{
+
+        overflow-y:scroll;
+        font-size:2.2vw;  
+        -webkit-overflow-scrolling: touch; 
+        overflow-x:hidden;
+
+    }
+    
+    #div_ent_com_virt::-webkit-scrollbar, 
+    #div_tall_tec_music::-webkit-scrollbar, 
+    #div_sist_int::-webkit-scrollbar, 
+    #div_gest_cares::-webkit-scrollbar, 
+    #div_cybersec::-webkit-scrollbar, 
+    #div_aiw::-webkit-scrollbar, 
+    #div_redes_in::-webkit-scrollbar, 
+    #div_ing_soft_web::-webkit-scrollbar, 
+    #div_gest_proy::-webkit-scrollbar, 
+    #div_intel_art::-webkit-scrollbar, 
+    #div_iot::-webkit-scrollbar, 
+    #div_dockerlabs::-webkit-scrollbar,
+    #bar_menu_info::-webkit-scrollbar {
+        width: 4px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    #div_ent_com_virt::-webkit-scrollbar-thumb, 
+    #div_tall_tec_music::-webkit-scrollbar-thumb, 
+    #div_sist_int::-webkit-scrollbar-thumb, 
+    #div_gest_cares::-webkit-scrollbar-thumb, 
+    #div_cybersec::-webkit-scrollbar-thumb, 
+    #div_aiw::-webkit-scrollbar-thumb, 
+    #div_redes_in::-webkit-scrollbar-thumb, 
+    #div_ing_soft_web::-webkit-scrollbar-thumb, 
+    #div_gest_proy::-webkit-scrollbar-thumb, 
+    #div_intel_art::-webkit-scrollbar-thumb, 
+    #div_iot::-webkit-scrollbar-thumb, 
+    #div_dockerlabs::-webkit-scrollbar-thumb,
+    #bar_menu_info::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.4); 
+        border-radius: 4px;
+    }
+
+    .maquinas_cyber {
+        position: absolute;
+        margin-top:0%;
+        display: none;
+        background-color: #e2fdfd;
+        width: 44.15vw;
+        height:38.3vw;
+        z-index: 1;
+        margin-left: 0%;
+    }
+
+
+
+
+    #button_download_pdf {
+        font-size: 2.5vw;
+        font-style: italic;
+        padding: 1vw;
+        background-color: #69b4b4;
+        border-radius: 5%;
+        border: 0.1vw solid black;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 26%;
+        margin-left: 4%;
+    }
+
+    details > summary {
+        display: block;
+        cursor: pointer;
+        color: blue;
+        padding-top:5%;
+        border-left: 0.3vw solid #000;
+        font-size:1.8vw;
+        padding-left: 1vw;
+        height:1%;
+        font-style: italic;
+        font-weight: bold ;
+        
+    }
+
+    #bar_dockerlabs{
+        color: rgb(223, 47, 47);
+        width:14.5vw; 
+        font-size: 1.7vw;
+    }
+
+    #dockerlabs{
+        font-size: 1.6vw; 
+        font-weight:bold; 
+        cursor: pointer;
+    }
+
+    details ul li {
+        font-size:1.5vw;
+        padding-top:3%;
+    }
+
+    #dockerlabs_muyfacil{
+        font-size: 2vw; 
+        font-weight:bold;
+    }
+    
+    #dockerlabs_facil{
+        font-size: 2vw; 
+        font-weight:bold;
+    }
+
+    
+
+
+    
+
+    
+}
+
+
+    
+
+
+/* For Horizontal Tablet */
+@media only screen and (min-width: 768px) and (max-width: 2100px) and (max-height: 1300px) and (orientation: landscape) {
+
+    #gest_proy_title,
+    #iot_title,
+    #aiw_title,
+    #ent_com_virt_title,
+    #cybersec_title{
+            width:200vw;
+            font-size:2.5vw;
+    }
+
+    #tall_tec_music_title{
+        font-size:2.25vw;
+
+    }
+    
+
+
+    #iot_title{
+        margin:1%;
+    }
+
+    #iot_contrato_title{
+        font-size:1.25vw;
+        
+    }
+
+    #cybersec_title{
+        margin:1%;
+    }
+
+    #aiw_title{
+        font-size: 2.25vw;
+    }
+
+
+}
+
+

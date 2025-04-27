@@ -1,0 +1,32 @@
+/* CSS  By Daniel Lizarte Cáceres */
+
+/* General Structure */
+body, html {
+    height: 100%;
+    margin: 0;
+    
+}
+
+/* Body Desktop */
+body#initIndex {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background:url("../resources/wallpaper_tech.png"),  linear-gradient(to top,#0a1b2a 15%, #0f2e46 40%,#1e3f66 60%, #3a5d7e 80%,#58a7c7 100% );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden; 
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
