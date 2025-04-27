@@ -59,24 +59,26 @@ body#initIndex {
 
 
 /* Display:none; to  Hide elements before initiating session then JS activates them*/
+
 /* Icons Desktop Row 1 */
 #iconContainer1 {
     display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-top: 1%;
+
     
 }
 
 /* Icon Learning Desktop */
 #learning_file {
-    position: relative;
-    margin-top: 2%;
-    margin-left:2.5%
+   
 }
 
 #icon_file_learning {
     display: none;
     width: 6em;
     height: auto;
-    margin-left: 12%;
     cursor: pointer;
 }
 
@@ -84,16 +86,13 @@ h3#text_learning {
     display: none;
     width: 102%;
     height: 21%;
-    position: relative;
+    text-align: center;
     font-size: 120%;
     font-family: consolas;
     font-weight: bolder;
     color: rgb(210, 210, 210);
-    margin-left: -6%;
     border-radius: 1.75vw; 
-    padding: 2.6vw; 
-    padding-bottom: 3.0vh; 
-    padding-top: 0px;
+    
    
     overflow: hidden;
     word-wrap: break-word;
@@ -110,16 +109,14 @@ h3#text_learning {
 
 /* Icon Projects Desktop */
 #project_file {
-    position: relative;
-    margin-left: 5%;
-    margin-top: 2.25%;
+
 }
 
 #icon_file_project {
     display: none;
-    width: 5.75em;
+    width: 6em;
     height: auto;
-    margin-left: 14%;
+
     cursor: pointer;
    
 }
@@ -128,16 +125,13 @@ h3#text_project {
     display: none;
     width: 100%;
     height: 21%;
-    position: relative;
     font-size: 120%;
     font-family: consolas;
     font-weight: bolder;
     color: rgb(210, 210, 210);
-   
+    text-align: center;
     border-radius: 1.75vw; 
-    padding: 1.7vw; 
-    padding-bottom: 3.0vh;
-    padding-top: 0px;
+  
     overflow: hidden;
     cursor: pointer;
     transition: color 0.3s;
@@ -151,14 +145,14 @@ h3#text_project {
 /* Icons Desktop Row 2 */
 #iconContainer2 {
     display: flex;
-    
+    justify-content: space-around;
+    width: 30%;
+    margin-top: 2%;    
 }
 
 /* Icon Experience Desktop */
 #experience_file {
-    position: relative;
-    margin-top: 2%;
-    margin-left: 2.5%;
+ 
 
 }
 
@@ -166,31 +160,23 @@ h3#text_project {
     display: none;
     width: 6em;
     height: auto;
-    
+    margin-left: 4%;
     cursor: pointer;
-    margin-left:12%;
 }
 
 h3#text_experience {
     display: none;
     width: 100%;
     height: 21%;
-    position: relative;
     font-size: 120%; 
-    margin-left:-8%;
     
     font-family: consolas;
     font-weight: bolder;
     color: rgb(210, 210, 210);
-
-    border-radius: 1.75vw; 
-    padding: 2.2vw; 
-    padding-bottom: 3.0vh;
-    padding-top: 0px;
+    text-align: center;
     /*box-shadow: 0 4px 6px #000;*/
     overflow: hidden;
 
-    margin-top:5%;
     cursor: pointer;
     transition: color 0.3s;
 }
@@ -201,9 +187,7 @@ h3#text_experience {
 
 /* Icon Resume Desktop */
 #resume_file { 
-    position:relative;
-    margin-left: 6%;
-    margin-top: 2.25%;
+
 }
 
 #icon_file_resume {
@@ -217,21 +201,14 @@ h3#text_resume {
     display: none;
     width: 100%;
     height: 20%;
-    position: relative;
     font-size: 120%;
     font-family: consolas;
     font-weight: bolder;
     color: rgb(210, 210, 210);
-
-    border-radius: 1.75vw; 
-    padding: 1.6vw; 
-    padding-bottom: 3.0vh;
-    padding-top: 0px;
+    text-align: center;
     overflow: hidden;
-    margin-top:5%;
     cursor: pointer;
     transition: color 0.3s;
-    margin-left: -5%;
 }
 
 #resume_file:hover  h3#text_resume {
@@ -243,42 +220,35 @@ h3#text_resume {
 /* Icons Desktop Row 3 */
 #iconContainer3 {
     display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-top: 2%;   
     
 }
 
 /* Icon AboutMe Desktop */
 #aboutme_file {
-    position: relative;
-    margin-top: 2%;
-    margin-left: 2.5%;
-    
+
 }
 
 #icon_file_aboutme {
     display: none;
     width: 6em;
     height: auto;
-    
+    margin-left: 3.5%;
     cursor: pointer;
-    margin-left:17.5%;
+
 }
 
 h3#text_aboutme {
     display: none;
     width: 100%;
     height: 20%;
-    position: relative;
     font-size: 120%; 
-    margin-left: 2.5%;
-    margin-top:5%;
     font-family: consolas;
     font-weight: bolder;
     color: rgb(210, 210, 210);
-
-    border-radius: 1.75vw; 
-    padding: 2.1vw; 
-    padding-bottom: 3.0vh;
-    padding-top: 0px;
+    text-align: right;
     overflow: hidden;
     cursor: pointer;
     transition: color0.3s;
@@ -291,17 +261,13 @@ h3#text_aboutme {
 
 /* Icon Contact Desktop */
 #contact_file {
-    
-    position: relative;
-    margin-left: 5.5%;
-    margin-top: 2.25%;
+
 }
 
 #icon_file_contact {
     display: none;
     width: 6em;
     height: auto;
-    margin-left: 22%;
     cursor: pointer;
 }
 
@@ -309,18 +275,12 @@ h3#text_contact {
     display: none;
     width: 100%;
     height: 20%;
-    position: relative;
     font-size: 120%;
     font-family: consolas;
     font-weight: bolder;
     color: rgb(210, 210, 210);
-    margin-left:5%;
+    text-align: center;
     
-    
-    border-radius: 1.75vw;
-    padding: 2.6vw; 
-    padding-bottom: 3.0vh;
-    padding-top: 0px;
     overflow: hidden;
     cursor: pointer;
     transition: color 0.3s;
