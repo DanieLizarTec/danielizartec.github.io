@@ -40,10 +40,11 @@ body#initIndex {
     width: 1000px;
     height: 50px;
     
-    margin-top:40%;
-    margin-left: 15%;
+    margin-top:42%;
+    margin-left: 10%;
     font-size: 2vw; 
-    color: black;
+    font-family: consolas;
+    color: rgb(0, 116, 104);
     font-weight: bold;
    
 }
